@@ -1,0 +1,15 @@
+# Local-only maintainer workflow files (root only)
+/AGENTS.md
+/CLAUDE.md
+/next-step.md
+
+# Environment/secrets
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
