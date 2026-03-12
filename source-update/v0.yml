@@ -1,0 +1,373 @@
+schema_version: v0.1
+maintainer: R&D Nordic Consultancy
+last_verified: 2026-02-26
+regulatory_basis:
+  - EU AI Act (Regulation (EU) 2024/1689)
+  - EU GDPR (Regulation (EU) 2016/679)
+
+notes: >
+  Questions flagged triage: true are used in the 15-minute triage mode.
+  All questions are used in full pack mode.
+  Questions flagged escalate: true should trigger an immediate note to the user
+  that this area requires DPO or legal counsel review regardless of the answer.
+
+# ─────────────────────────────────────────────
+# SECTION A: System and purpose
+# ─────────────────────────────────────────────
+
+questions:
+
+  - id: A1
+    triage: true
+    section: "A. System and purpose"
+    question: "What is the name or working title of this AI system?"
+    type: text
+    output_field: system.yml > system_name
+    notes: Used as the project slug for the evidence pack folder.
+
+  - id: A2
+    triage: true
+    section: "A. System and purpose"
+    question: >
+      In one or two sentences, what does this system do and what is it
+      intended to be used for?
+    type: text
+    output_field: system.yml > intended_purpose
+    notes: >
+      This is the intended purpose under Article 6 EU AI Act. Vague answers
+      should be probed — the intended purpose determines risk classification.
+
+  - id: A3
+    triage: true
+    section: "A. System and purpose"
+    question: >
+      Who uses this system? (e.g. internal staff only, members of the public,
+      specific professional groups, automated pipeline with no human user)
+    type: text
+    output_field: system.yml > users
+    notes: >
+      Relevant to human oversight obligations and transparency requirements.
+      If members of the public are users, flag for additional scrutiny.
+
+  - id: A4
+    triage: true
+    section: "A. System and purpose"
+    question: >
+      Does this system make decisions, recommendations, or assessments that
+      directly affect individual people? If yes, give an example.
+    type: text
+    risk_flag: true
+    output_field: ai-act-classification.md > decision_impact
+    notes: >
+      A yes here is a strong indicator of high-risk classification under
+      Annex III. Flag immediately if confirmed.
+
+  - id: A5
+    triage: false
+    section: "A. System and purpose"
+    question: >
+      What problem does this system solve, and what was the process before
+      it existed?
+    type: text
+    output_field: system.yml > background
+    notes: Useful for proportionality assessment in the DPIA.
+
+# ─────────────────────────────────────────────
+# SECTION B: Domain and context flags
+# ─────────────────────────────────────────────
+
+  - id: B1
+    triage: true
+    section: "B. Domain and context"
+    question: >
+      Which of the following best describes the primary domain or context
+      in which this system is used?
+      (a) Employment or workforce management
+      (b) Education or vocational training
+      (c) Access to essential public or private services (benefits, housing, credit)
+      (d) Law enforcement or criminal justice
+      (e) Migration, asylum, or border control
+      (f) Critical infrastructure (energy, water, transport, digital)
+      (g) Healthcare or medical devices
+      (h) Biometric identification or categorisation
+      (i) None of the above — general business or administrative use
+    type: single_choice
+    risk_flag: true
+    escalate: false
+    output_field: ai-act-classification.md > domain_flag
+    notes: >
+      Options (a)-(h) are Annex III indicators under the EU AI Act and
+      trigger high-risk classification assessment. Option (i) does not
+      rule out high-risk but lowers prior probability.
+
+  - id: B2
+    triage: true
+    section: "B. Domain and context"
+    question: >
+      Are any of the users or people affected by this system children
+      (under 18)?
+    type: boolean
+    risk_flag: true
+    escalate: true
+    output_field: ai-act-classification.md > children_affected
+    escalation_reason: >
+      Processing involving children requires enhanced DPIA scrutiny and
+      specific safeguards under GDPR Article 8 and recital 38.
+
+  - id: B3
+    triage: false
+    section: "B. Domain and context"
+    question: >
+      Is this system used in a safety-critical context where an error could
+      cause physical harm or significant operational disruption?
+    type: boolean
+    risk_flag: true
+    escalate: true
+    output_field: high-risk-flags.md > safety_critical
+    escalation_reason: >
+      Safety-critical contexts engage additional obligations under the EU AI
+      Act and may require conformity assessment.
+
+# ─────────────────────────────────────────────
+# SECTION C: Model and deployment
+# ─────────────────────────────────────────────
+
+  - id: C1
+    triage: true
+    section: "C. Model and deployment"
+    question: >
+      What type of AI is this? For example: large language model (LLM),
+      classification model, recommendation system, computer vision,
+      generative image/audio, rules-based system, or other.
+    type: text
+    output_field: system.yml > model_type
+    notes: >
+      Relevant to GPAI obligations (EU AI Act Title IX) if an LLM or
+      general-purpose model is used as a component.
+
+  - id: C2
+    triage: true
+    section: "C. Model and deployment"
+    question: >
+      Is this system built on a third-party AI model or service
+      (e.g. OpenAI, Anthropic, Microsoft Azure AI, Google Vertex)?
+      If yes, which provider?
+    type: text
+    output_field: system.yml > ai_provider
+    notes: >
+      Determines whether the organisation is acting as a deployer under
+      the EU AI Act (Article 3(4)) and what obligations flow from that role.
+
+  - id: C3
+    triage: false
+    section: "C. Model and deployment"
+    question: >
+      Is the system being used as a tool to assist human decisions,
+      or does it automate decisions without a human reviewing each output?
+    type: text
+    output_field: roles-and-obligations.md > automation_level
+    notes: >
+      Full automation without human review is a significant risk indicator
+      and affects GDPR Article 22 obligations on automated decision-making.
+
+  - id: C4
+    triage: true
+    section: "C. Model and deployment"
+    question: >
+      Where does the system run and where is data processed?
+      (e.g. on-premises, EU cloud provider, non-EU cloud provider, hybrid)
+    type: text
+    output_field: system.yml > deployment_model
+    notes: >
+      Non-EU processing triggers Chapter V GDPR transfer assessment.
+      Flag if non-EU cloud is used.
+
+  - id: C5
+    triage: false
+    section: "C. Model and deployment"
+    question: >
+      Who is responsible for operating and maintaining this system day-to-day?
+      Is that your organisation, a vendor, or a shared arrangement?
+    type: text
+    output_field: roles-and-obligations.md > operational_responsibility
+    notes: >
+      Relevant to determining provider vs deployer role under EU AI Act
+      Article 25 and controller vs processor under GDPR.
+
+# ─────────────────────────────────────────────
+# SECTION D: Data
+# ─────────────────────────────────────────────
+
+  - id: D1
+    triage: true
+    section: "D. Data"
+    question: >
+      Does this system process personal data (any information relating to
+      an identified or identifiable natural person)?
+    type: boolean
+    risk_flag: true
+    output_field: dpia-triage.md > personal_data_processed
+    notes: >
+      A yes triggers GDPR applicability. If no, GDPR obligations are
+      significantly reduced but EU AI Act obligations still apply.
+
+  - id: D2
+    triage: true
+    section: "D. Data"
+    question: >
+      Does the system process any special category data? This includes:
+      health data, biometric data, racial or ethnic origin, political opinions,
+      religious beliefs, trade union membership, genetic data, sex life or
+      sexual orientation, criminal convictions.
+    type: boolean
+    risk_flag: true
+    escalate: true
+    output_field: dpia-triage.md > special_category_data
+    escalation_reason: >
+      Special category data under GDPR Article 9 requires an explicit
+      lawful basis and enhanced DPIA. Escalate to DPO before proceeding.
+
+  - id: D3
+    triage: false
+    section: "D. Data"
+    question: >
+      Is any personal data used to train, fine-tune, or improve the AI model?
+      Are prompts or user inputs retained beyond the immediate session?
+    type: text
+    risk_flag: true
+    escalate: true
+    output_field: dpia-triage.md > training_data_retention
+    escalation_reason: >
+      Using personal data for training without a clear lawful basis and
+      data minimisation controls is a high-risk practice. DPO input required.
+
+  - id: D4
+    triage: false
+    section: "D. Data"
+    question: >
+      Are there data processing agreements (DPAs) in place with all
+      third-party vendors who process personal data as part of this system?
+    type: boolean
+    output_field: gap-register.md > dpa_status
+    notes: >
+      GDPR Article 28 requires a written DPA with all processors.
+      A no here is a gap that must be remediated before deployment.
+
+  - id: D5
+    triage: false
+    section: "D. Data"
+    question: >
+      If personal data is transferred outside the EEA, what transfer
+      mechanism is relied upon? (e.g. adequacy decision, Standard
+      Contractual Clauses, other)
+    type: text
+    escalate: true
+    output_field: legal-basis-notes.md > transfer_mechanism
+    escalation_reason: >
+      International transfers require a valid mechanism under GDPR Chapter V.
+      Verify with legal counsel that the mechanism is current and correctly
+      implemented.
+
+# ─────────────────────────────────────────────
+# SECTION E: Controls
+# ─────────────────────────────────────────────
+
+  - id: E1
+    triage: true
+    section: "E. Controls"
+    question: >
+      Is there a human review step before the system's output is acted upon?
+      Describe briefly how oversight works in practice.
+    type: text
+    output_field: high-risk-flags.md > human_oversight
+    notes: >
+      Human oversight is a core obligation for high-risk AI systems under
+      EU AI Act Article 14. Absence of meaningful oversight is a major gap.
+
+  - id: E2
+    triage: false
+    section: "E. Controls"
+    question: >
+      Is the system's activity logged? If yes, what is logged, for how long,
+      and who has access to the logs?
+    type: text
+    output_field: high-risk-flags.md > logging
+    notes: >
+      Logging obligations under EU AI Act Article 12. High-risk systems
+      must enable post-hoc review of outputs.
+
+  - id: E3
+    triage: false
+    section: "E. Controls"
+    question: >
+      Is there a documented process for reporting and responding to incidents
+      or errors produced by the system?
+    type: boolean
+    output_field: gap-register.md > incident_response
+    notes: >
+      EU AI Act Article 73 requires serious incident reporting for high-risk
+      systems. GDPR Article 33 requires personal data breach notification.
+
+  - id: E4
+    triage: false
+    section: "E. Controls"
+    question: >
+      What access controls are in place? Who can query, configure, or modify
+      the system, and how is that access managed?
+    type: text
+    output_field: gap-register.md > access_controls
+
+  - id: E5
+    triage: false
+    section: "E. Controls"
+    question: >
+      Is there a documented process for affected individuals to challenge
+      or seek review of a decision made by or with this system?
+    type: text
+    escalate: false
+    output_field: roles-and-obligations.md > redress_process
+    notes: >
+      Relevant to GDPR Article 22 rights and EU AI Act transparency
+      obligations. Absence is a gap for high-risk systems.
+
+# ─────────────────────────────────────────────
+# SECTION F: Outputs and impact
+# ─────────────────────────────────────────────
+
+  - id: F1
+    triage: true
+    section: "F. Outputs and impact"
+    question: >
+      Could the output of this system be used to deny services, restrict
+      access, rank or score individuals, or otherwise materially affect a
+      person's rights, opportunities, or circumstances?
+    type: boolean
+    risk_flag: true
+    output_field: ai-act-classification.md > rights_impact
+    notes: >
+      A yes here is a strong indicator of high-risk classification and
+      triggers DPIA requirement under GDPR Article 35(3)(a).
+
+  - id: F2
+    triage: false
+    section: "F. Outputs and impact"
+    question: >
+      Are individuals informed that they are interacting with or being
+      assessed by an AI system? If yes, how and when are they informed?
+    type: text
+    output_field: roles-and-obligations.md > transparency_notice
+    notes: >
+      EU AI Act Articles 50 and 13 set out transparency obligations.
+      GDPR Articles 13-14 require information about automated processing.
+
+  - id: F3
+    triage: false
+    section: "F. Outputs and impact"
+    question: >
+      Has a risk assessment or any prior compliance review been carried out
+      for this system? If yes, what did it conclude?
+    type: text
+    output_field: gap-register.md > prior_assessment
+    notes: >
+      Existing assessments can accelerate the intake. Gaps in prior
+      assessments should be recorded.
