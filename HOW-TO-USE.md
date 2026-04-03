@@ -1,46 +1,66 @@
-﻿# How To Use This Repo
+# How To Use This Repo
 
-This repository supports three practical usage modes.
+This repository is now structured as a portable compliance operating kit for AI-assisted work.
 
-## 1) Library Mode (read and apply)
-Best for legal/compliance teams who want guidance and templates.
+## Fastest Way To Use It
 
-Steps:
-1. Start in `README.md`.
-2. Use `eu-ai-act/risk-classification.md` for classification.
-3. Use `gdpr/lawful-basis-decision-tree.md` for lawful basis analysis.
-4. Use `dpia/ai-dpia-template.md` for DPIA work.
+1. Open [`START-HERE.md`](START-HERE.md)
+2. Tell your assistant what you need
+3. Let it run the relevant questionnaire from `questionnaires/`
+4. Let it follow the matching file in `flows/`
+5. Require an output from `outputs/`
+6. Review `trust/` before sharing sensitive material
 
-## 2) Copilot Mode (connect your AI assistant)
-Best for teams using Claude, Codex, or similar tools in a project workspace.
+## Usage Modes
 
-Use these files:
-- `agents/CLAUDE.md`
-- `agents/AGENTS.md`
-- `agents/SYSTEM-PROMPT.md`
-- `agents/TASK-TEMPLATES.md`
+## 1) Runtime Mode
 
-How to apply:
-1. Copy these files into your project root (or merge into your existing assistant instructions).
-2. Keep this repo available to your assistant as reference material.
-3. Require output in the format defined in `agents/OUTPUT-FORMAT.md`.
+Best for teams using Claude, Codex, Cursor, or similar tools directly in a workspace.
 
-## 3) Project-Embed Mode (copy starter controls)
-Best for product teams that need compliance controls in delivery flow.
+Key files:
 
-Copy from `starter-pack/` into your project:
-- `compliance-gate.md`
-- `dpia-minimum.md`
-- `ai-act-classification-check.md`
-- `claim-source-register.csv`
+- [`START-HERE.md`](START-HERE.md)
+- [`RUNBOOK.md`](RUNBOOK.md)
+- [`flows/`](flows/)
+- [`questionnaires/`](questionnaires/)
+- [`outputs/`](outputs/)
+- [`playbooks/`](playbooks/)
+- [`trust/`](trust/)
 
-## Minimum Quality Rule (all modes)
-Any compliance output should include:
-- Claim summary
-- Source link(s)
-- Jurisdiction assumptions
-- Confidence level
-- Open legal questions
+## 2) Library Mode
+
+Best for legal, privacy, or governance teams that want to read and apply the source material directly.
+
+Core reference files:
+
+- [`eu-ai-act/risk-classification.md`](eu-ai-act/risk-classification.md)
+- [`eu-ai-act/application-dates.md`](eu-ai-act/application-dates.md)
+- [`gdpr/lawful-basis-decision-tree.md`](gdpr/lawful-basis-decision-tree.md)
+- [`gdpr/recruitment-automated-decision-guidance.md`](gdpr/recruitment-automated-decision-guidance.md)
+- [`dpia/ai-dpia-template.md`](dpia/ai-dpia-template.md)
+
+## 3) Project-Embed Mode
+
+Best for product teams that want to copy controls into their own repositories.
+
+Start from:
+
+- [`starter-pack/compliance-gate.md`](starter-pack/compliance-gate.md)
+- [`starter-pack/dpia-minimum.md`](starter-pack/dpia-minimum.md)
+- [`starter-pack/ai-act-classification-check.md`](starter-pack/ai-act-classification-check.md)
+- [`starter-pack/claim-source-register.csv`](starter-pack/claim-source-register.csv)
+
+## Minimum Quality Rule
+
+Any serious compliance output should include:
+
+- facts provided
+- assumptions
+- source basis
+- confidence level
+- open legal or factual questions
+- next action
 
 ## Important
-This toolkit is informational and not legal advice. Use qualified legal counsel for decisions with legal or regulatory impact.
+
+This repo is informational and operationally useful, but it is not legal advice and it does not automatically make an organisation compliant.
