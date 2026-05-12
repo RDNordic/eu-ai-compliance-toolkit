@@ -4,6 +4,8 @@ Use this file as the operating entrypoint for the repository.
 
 If you are an AI assistant working in this repo, do not start by dumping a generic explanation. Route the user into a concrete workflow.
 
+For assistants invoked from a pasted GitHub link, first read [`AI-RUNTIME.md`](AI-RUNTIME.md). It is the compact runtime contract for chat-based use.
+
 ## First Step
 
 Ask the user what they want to do:

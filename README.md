@@ -2,6 +2,18 @@
 
 Turn Claude, Codex, and similar workspace assistants into structured EU AI Act and GDPR compliance operators for product teams.
 
+## Use This With A Chat Tool
+
+If you are pasting this GitHub repo into ChatGPT, Claude, Gemini, Copilot, or another web assistant, use this prompt:
+
+```text
+Use this GitHub repo as an interview-driven EU AI Act and GDPR compliance workflow: https://github.com/RDNordic/eu-ai-compliance-toolkit
+
+Start with AI-RUNTIME.md. Do not summarize the repo. Ask me the minimum questions needed to route my use case, then guide me through the right workflow. Ask no more than five questions at a time. Separate facts from assumptions, cite sources, and produce a short source-backed output only after you have enough facts.
+```
+
+For local workspace assistants, open [`AI-RUNTIME.md`](AI-RUNTIME.md) or [`START-HERE.md`](START-HERE.md) first.
+
 This repository is designed to be cloned into a project workspace or used as a standalone compliance operating kit. It combines:
 
 - guided intake and questionnaires

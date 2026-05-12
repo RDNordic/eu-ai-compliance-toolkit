@@ -2,6 +2,12 @@
 
 These are copy-paste prompts for people trying the repo for the first time in Claude, Codex, Cursor, or similar tools.
 
+## Prompt 0: GitHub Link Only
+
+Use this GitHub repo as an interview-driven EU AI Act and GDPR compliance workflow: https://github.com/RDNordic/eu-ai-compliance-toolkit
+
+Start with `AI-RUNTIME.md`. Do not summarize the repo. Ask me the minimum questions needed to route my use case, then guide me through the right workflow. Ask no more than five questions at a time. Separate facts from assumptions, cite sources, and produce a short source-backed output only after you have enough facts.
+
 ## Prompt 1: General Start
 
 Use this repository as a compliance runtime. Start with `START-HERE.md`, ask me the minimum questions needed to understand my AI use case, then route me to the right workflow and produce a source-backed analysis.
