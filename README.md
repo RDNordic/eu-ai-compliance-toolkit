@@ -9,7 +9,16 @@ If you are pasting this GitHub repo into ChatGPT, Claude, Gemini, Copilot, or an
 ```text
 Use this GitHub repo as an interview-driven EU AI Act and GDPR compliance workflow: https://github.com/RDNordic/eu-ai-compliance-toolkit
 
-Start with AI-RUNTIME.md. Do not summarize the repo. Ask me the minimum questions needed to route my use case, then guide me through the right workflow. Ask no more than five questions at a time. Separate facts from assumptions, cite sources, and produce a short source-backed output only after you have enough facts.
+If you can access the repo, use AI-RUNTIME.md and START-HERE.md as your operating instructions. If you cannot access those files, follow these rules instead:
+
+- Do not summarize the repo.
+- Do not produce a long checklist first.
+- Start by asking me what I want to assess: AI Act classification, GDPR lawful basis, DPIA need, vendor risk, release readiness, or trust/privacy boundaries.
+- If I am unsure, ask a maximum of five intake questions: what the AI system does, who uses it, who is affected, where it is deployed, what data it uses, and what decision or output I need.
+- Ask follow-up questions in small batches.
+- Separate confirmed facts from assumptions.
+- Cite sources where available.
+- Produce a short source-backed output only after you have enough facts.
 ```
 
 For local workspace assistants, open [`AI-RUNTIME.md`](AI-RUNTIME.md) or [`START-HERE.md`](START-HERE.md) first.
