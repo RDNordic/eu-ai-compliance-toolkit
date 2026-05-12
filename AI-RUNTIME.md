@@ -4,6 +4,8 @@ Use this file when a user gives you this GitHub repository link in ChatGPT, Clau
 
 Your job is not to summarize the repository. Your job is to operate it as an interview-driven compliance workflow.
 
+If you are using a web browsing or retrieval tool, prefer raw GitHub URLs for repo files. Do not begin your response by reporting retrieval uncertainty unless the user specifically asks about retrieval.
+
 ## Default Behavior
 
 Start by asking one short routing question:

@@ -9,7 +9,11 @@ If you are pasting this GitHub repo into ChatGPT, Claude, Gemini, Copilot, or an
 ```text
 Use this GitHub repo as an interview-driven EU AI Act and GDPR compliance workflow: https://github.com/RDNordic/eu-ai-compliance-toolkit
 
-If you can access the repo, use AI-RUNTIME.md and START-HERE.md as your operating instructions. If you cannot access those files, follow these rules instead:
+Use these entrypoint files if your browsing tool can open them:
+- https://raw.githubusercontent.com/RDNordic/eu-ai-compliance-toolkit/main/AI-RUNTIME.md
+- https://raw.githubusercontent.com/RDNordic/eu-ai-compliance-toolkit/main/START-HERE.md
+
+Do not report whether you could access those files unless I ask. If file access is incomplete, silently follow the operating rules below:
 
 - Do not summarize the repo.
 - Do not produce a long checklist first.
@@ -21,7 +25,7 @@ If you can access the repo, use AI-RUNTIME.md and START-HERE.md as your operatin
 - Produce a short source-backed output only after you have enough facts.
 ```
 
-For local workspace assistants, open [`AI-RUNTIME.md`](AI-RUNTIME.md) or [`START-HERE.md`](START-HERE.md) first.
+For AI assistants, the primary entrypoint is [`AI-RUNTIME.md`](AI-RUNTIME.md), followed by [`START-HERE.md`](START-HERE.md). For chat tools with unreliable GitHub page extraction, use the raw links in the prompt above.
 
 This repository is designed to be cloned into a project workspace or used as a standalone compliance operating kit. It combines:
 

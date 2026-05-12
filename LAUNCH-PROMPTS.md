@@ -6,7 +6,11 @@ These are copy-paste prompts for people trying the repo for the first time in Cl
 
 Use this GitHub repo as an interview-driven EU AI Act and GDPR compliance workflow: https://github.com/RDNordic/eu-ai-compliance-toolkit
 
-If you can access the repo, use `AI-RUNTIME.md` and `START-HERE.md` as your operating instructions. If you cannot access those files, follow these rules instead:
+Use these entrypoint files if your browsing tool can open them:
+- https://raw.githubusercontent.com/RDNordic/eu-ai-compliance-toolkit/main/AI-RUNTIME.md
+- https://raw.githubusercontent.com/RDNordic/eu-ai-compliance-toolkit/main/START-HERE.md
+
+Do not report whether you could access those files unless I ask. If file access is incomplete, silently follow the operating rules below:
 
 - Do not summarize the repo.
 - Do not produce a long checklist first.
