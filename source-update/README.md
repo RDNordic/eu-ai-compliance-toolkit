@@ -16,11 +16,13 @@ This is what "hook up your own AI, stay compliant" means in practice.
 
 ## Files in this folder
 
-| File | Where it goes in your repo | What it does |
-|------|---------------------------|--------------|
-| `CLAUDE.md` | Repo root | Tells Claude Code how to behave, which modes to run, and what to produce |
-| `intake/questions/v0.yml` | `intake/questions/v0.yml` | The question set Claude works through during a session |
-| `evidence-packs/example-municipality/triage-summary.md` | `evidence-packs/example-municipality/triage-summary.md` | A worked example showing the expected triage output format |
+| File in this folder | Where it goes in your repo | What it does |
+|---------------------|---------------------------|--------------|
+| `source-update/CLAUDE.md` | `CLAUDE.md` (repo root) | Tells Claude Code how to behave, which modes to run, and what to produce |
+| `source-update/v0.yml` | `intake/questions/v0.yml` | The question set Claude works through during a session |
+| `source-update/triage-summary.md` | `evidence-packs/example-municipality/triage-summary.md` | A worked example showing the expected triage output format |
+
+> **Note on paths.** The files live flat in `source-update/` in this repository, but Claude Code expects them at the destination paths shown above. Copy and rename them as part of setup. The destination paths are what `CLAUDE.md` refers to internally.
 
 ---
 
@@ -38,17 +40,23 @@ Requires Node 18 or later. Authenticate with your Anthropic account when prompte
 
 **2. Copy files into your repo**
 
-Place each file at the path shown in the table above. The folder structure should look like this:
+Copy each file from `source-update/` to the destination path shown in the table above. The resulting structure should look like this:
 
 ```
 your-repo/
-├── CLAUDE.md                          ← drop here
+├── CLAUDE.md                          <- from source-update/CLAUDE.md
 ├── intake/
 │   └── questions/
-│       └── v0.yml                     ← drop here
+│       └── v0.yml                     <- from source-update/v0.yml
 └── evidence-packs/
     └── example-municipality/
-        └── triage-summary.md          ← drop here
+        └── triage-summary.md          <- from source-update/triage-summary.md
+```
+
+From the root of a clone of this repository:
+
+```bash
+mkdir -p intake/questions evidence-packs/example-municipality && cp source-update/v0.yml intake/questions/v0.yml && cp source-update/triage-summary.md evidence-packs/example-municipality/triage-summary.md && cp source-update/CLAUDE.md ./CLAUDE.md
 ```
 
 **3. Open your repo in VS Code and start Claude Code**

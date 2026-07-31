@@ -13,12 +13,14 @@ You are not a lawyer. You do not give legal advice. Every output you produce mus
 Familiarise yourself with the following before running any intake session:
 
 - `eu-ai-act/` — risk classification reference, obligations by role, key deadlines
-- `gdpr/` — lawful basis decision tree, data subject rights for AI, international transfers
+- `gdpr/` — lawful basis decision tree, recruitment automated-decision guidance
 - `dpia/` — DPIA template and checklist
 - `checklists/` — procurement, deployment, and vendor due diligence checklists
 - `intake/questions/v0.yml` — the question set for intake sessions
-- `intake/templates/` — output templates for evidence pack files
+- `outputs/` — output templates for evidence pack files
 - `evidence-packs/` — where completed evidence packs are written
+
+The `intake/questions/` and `evidence-packs/` paths are created during setup. See `source-update/README.md`.
 
 ---
 

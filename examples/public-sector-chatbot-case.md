@@ -65,6 +65,7 @@ Typical questions the assistant should ask:
 Likely output themes:
 
 - AI Act: classification depends on whether the chatbot is merely informational or materially affects access, prioritization, or public decision processes
+- AI Act transparency: this is the live obligation regardless of tier. A citizen-facing chatbot must disclose that the user is interacting with an AI system under Art. 50, applying from **2 August 2026**. The 2026 Omnibus delayed high-risk obligations to December 2027 but did **not** delay Art. 50, so a "we are not high-risk" conclusion does not remove this duty
 - GDPR: intake and routing may involve personal data and require clear role, purpose, minimisation, and retention analysis
 - DPIA: strong case for a formal screen given public-sector context, citizen-facing deployment, and possible vulnerable-user impact
 - Vendor review: important if the platform processes prompts, stores logs, or uses data for training

@@ -1,8 +1,12 @@
 # EU AI Act — Risk Classification Quick Reference
 
-> **Last updated:** February 2026
+> **Last updated:** 2026-07-31
 >
-> This document summarises the risk-based classification framework established by the EU AI Act (Regulation (EU) 2024/1689). Always refer to the [official text](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) for authoritative definitions.
+> **Status: revised for Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026.**
+>
+> This document summarises the risk-based classification framework established by the EU AI Act (Regulation (EU) 2024/1689), **as amended**. Always refer to the [official text](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) for authoritative definitions.
+>
+> **The classification framework itself did not change. The deadlines and parts of the scope did.** If you classified a system before July 2026, the tier is probably still right, but the date you were working to and the Art. 6(1) safety-component test may not be. See [`omnibus-2026-changes.md`](omnibus-2026-changes.md).
 
 ---
 
@@ -38,10 +42,19 @@ These AI systems are **banned entirely** within the EU. No exceptions unless exp
 | **Untargeted scraping for facial recognition databases** | Scraping facial images from the internet or CCTV to build or expand facial recognition databases |
 | **Emotion recognition in workplaces and education** | Inferring emotions in workplace and educational settings, except for medical or safety reasons |
 | **Individual predictive policing** | Risk assessments of individuals predicting criminal offending based solely on profiling or personality traits |
+| **CSAM-generating systems** *(new, 2026)* | AI systems that generate or manipulate child sexual abuse material |
+| **Non-consensual intimate imagery** *(new, 2026)* | AI systems that generate or manipulate non-consensual sexual or intimate imagery, including so-called "nudifier" applications |
+
+> **New prohibitions added by Regulation (EU) 2026/1744**, inserted as Art. 5(1) points (ba) and (bb), with scope rules in new Art. 5(1a) and (1b). Point (bb) is defined by reference to Article 2(c) and (e) of Directive 2011/93/EU, subject to any "without right" defence under national law.
+>
+> **The scope rule matters more than the headline.** Under Art. 5(1a)(a), placing on the market or putting into service is prohibited only where either (i) that generation or manipulation is the **intended purpose** of the system, or (ii) the system's design, training, architecture, capabilities, or user-facing functionality make it a **reasonably foreseeable and reproducible outcome without significant technical modification**, *and* the system lacks reasonable and adequate technical safety measures and safeguards to reliably prevent it, accounting for reasonably foreseeable misuse, and to correct observed or reported misuse.
+>
+> The practical effect is that general-purpose image, video, and audio generators are not caught automatically, but weak safeguards can bring them into scope. The recitals are explicit that the prohibition is not intended to prevent providers from developing the underlying technical capability.
 
 ### Key dates
 
 - **2 February 2025:** Prohibitions on banned practices entered into force.
+- **2 December 2026:** Transitional deadline for the two prohibitions added in 2026 (CSAM and non-consensual intimate imagery), including the associated technical safeguards.
 
 ---
 
@@ -62,6 +75,14 @@ AI systems intended as safety components of products covered by EU harmonisation
 - Toys, radio equipment, and pressure equipment
 - Aviation, automotive, and marine safety systems
 - Railway systems
+
+> **Scope narrowed in 2026.** Regulation (EU) 2026/1744 inserted three new paragraphs into Article 6:
+>
+> - **Art. 6(1a):** AI systems used **solely** for non-safety-related aspects of user assistance, performance optimisation, service efficiency, automation, convenience, or quality control **do not qualify as safety components**.
+> - **Art. 6(1b):** notwithstanding the above, AI systems whose failure or malfunction **would endanger health and safety** do qualify as safety components.
+> - **Art. 6(1c):** a product required to undergo third-party conformity assessment **solely** because of risks other than health and safety, in particular radio spectrum distribution or electromagnetic interference not affecting health and safety, does not satisfy the condition in Art. 6(1)(b).
+>
+> If you previously classified an embedded system as high-risk on the strength of embedding alone, re-run that assessment. Note also that **Annex I Section A point 1 (machinery) was deleted** and Regulation (EU) 2023/1230 on machinery was added to **Annex I Section B** instead, which changes the conformity-assessment route for machinery-embedded AI.
 
 **Category B — Standalone high-risk systems (Article 6(2), Annex III)**
 
@@ -107,15 +128,21 @@ A system listed in Annex III is **not** considered high-risk if it does not pose
 | **Conformity assessment** (Art. 43) | Self-assessment or third-party assessment depending on the system type |
 | **EU declaration of conformity** (Art. 47) | Written declaration that the system meets requirements |
 | **CE marking** (Art. 48) | Affixed before market placement |
-| **Registration in EU database** (Art. 49) | Registration applies in defined cases (notably Annex III high-risk systems and specific exceptions/arrangements); verify applicability before market placement or putting into service |
+| **Registration in EU database** (Art. 49) | Registration applies in defined cases (notably Annex III high-risk systems and specific exceptions/arrangements); verify applicability before market placement or putting into service. **Article 49 itself was not amended by the 2026 Omnibus.** The reduction in registration burden was made instead by deleting points 7 and 9 of Annex VIII, Section B, which cut the information a provider must supply |
+| **Bias detection using special-category data** (new Art. 4a) | **Art. 10(5) was deleted by the 2026 Omnibus and replaced by a new, free-standing Article 4a.** Art. 4a(1) lets providers of high-risk systems process special categories of personal data where strictly necessary for bias detection and correction under Art. 10(2)(f) and (g), subject to six cumulative conditions. Art. 4a(2) extends the same possibility to providers and deployers of **other** AI systems and models, and to **deployers** of high-risk systems, on the same conditions. Art. 4a(2) expressly creates **no obligation** to carry out bias detection. See [`../gdpr/lawful-basis-decision-tree.md`](../gdpr/lawful-basis-decision-tree.md) |
 
 ### Key dates
 
 - **2 February 2025:** AI literacy obligations (Art. 4) apply; prohibitions on banned practices (Art. 5) apply.
 - **2 August 2025:** Rules on notified bodies apply; GPAI model obligations apply.
-- **2 August 2026:** Full obligations for high-risk AI systems apply; transparency obligations (Art. 50) apply.
-- **2 August 2027:** Obligations apply for high-risk AI systems under Article 6(1) (AI systems embedded in products subject to third-party conformity assessment under Annex I legislation).
-- **31 December 2030:** Compliance deadline for AI systems that are components of large-scale IT systems placed on the market or put into service before 2 August 2027.
+- **2 August 2026:** General application date. Transparency obligations (Art. 50) apply. **High-risk obligations do not.** See below.
+- **2 December 2027:** Obligations for stand-alone high-risk AI systems listed in Annex III. *(Moved by Regulation (EU) 2026/1744; was 2 August 2026.)*
+- **2 August 2028:** Obligations for high-risk AI systems under Article 6(1), embedded in products subject to third-party conformity assessment under Annex I legislation. *(Moved by Regulation (EU) 2026/1744; was 2 August 2027.)*
+- **31 December 2030:** Compliance deadline for AI systems that are components of certain large-scale IT systems. The original text keyed this to systems placed on the market before 2 August 2027; confirm whether that reference date was re-based.
+
+> **The delay is schedule relief, not scope relief.** Every requirement in the table above still applies to Annex III systems. Only the date moved. Risk management, data governance, technical documentation, logging, human oversight, and conformity assessment work should continue on the original design assumptions.
+
+See [`application-dates.md`](application-dates.md) for the full timeline and [`omnibus-2026-changes.md`](omnibus-2026-changes.md) for what changed.
 
 ---
 
@@ -133,7 +160,10 @@ AI systems that interact with people or generate content carry **transparency ob
 
 ### Key dates
 
-- **2 August 2026:** Transparency obligations apply (same date as high-risk system obligations).
+- **2 August 2026:** Transparency obligations apply. **This date was not moved by the 2026 Omnibus.**
+- **2 December 2026:** Grace period ends for machine-readable marking of synthetic content under Art. 50(2), for systems **already placed on the market before 2 August 2026**. Systems placed on the market on or after 2 August 2026 comply from that date.
+
+> **This is the most commonly missed obligation right now.** Because the high-risk deadline moved to December 2027, a lot of teams have concluded the AI Act no longer affects them this year. Article 50 is unaffected by that delay and binds from 2 August 2026. If your product talks to users, generates content, or produces synthetic media, this is your live obligation.
 
 ---
 
@@ -169,6 +199,15 @@ GPAI model obligations include:
 - Energy consumption reporting
 
 These obligations apply from **2 August 2025**. A provider of a GPAI model that is also deployed as an AI system may need to comply with both the GPAI obligations and the risk-tier obligations applicable to the system's intended purpose.
+
+> **Supervision widened in 2026.** Regulation (EU) 2026/1744 replaced Art. 75(1). The AI Office is now **exclusively competent** for supervising and enforcing obligations in relation to:
+>
+> - AI systems based on GPAI models where the model and the system are developed by the **same provider, or providers in the same undertaking**; and
+> - AI systems that constitute, or are integrated into, a Very Large Online Platform or Very Large Online Search Engine.
+>
+> Carve-outs remain for AI systems related to Annex I products, Annex III point 2 systems, systems provided by law enforcement, border management and financial institutions falling under Art. 74(6), and Annex III point 8 systems in the administration of justice.
+>
+> If you build products on your own foundation models, supervision moves from your national authority to the AI Office for those systems. That is a change of regulator, not just a change of scope.
 
 > **Note:** This document focuses on AI system classification. A separate guide to GPAI model obligations is planned for a future release.
 
@@ -207,7 +246,12 @@ Use this section to track known regulatory moving parts that may require updates
 
 | Topic | What to Watch | Owner | Review Date | Status | Notes |
 |-------|---------------|-------|-------------|--------|-------|
-| | | | | `No change` / `Update needed` | |
+| Chapter III Section 5 scope | Whether Arts. 40-49 fall outside the Art. 113(3)(c) deferral and apply from 2026-08-02 | _unassigned_ | 2026-09-01 | `Update needed` | Interpretation point, not a sourcing gap. Affects conformity assessment and Art. 49 registration timing |
+| Art. 50 guidance and Code of Practice on marking | Commission guidance on transparency and machine-readable marking ahead of 2026-08-02 | _unassigned_ | 2026-08-15 | `Update needed` | The live obligation this year; guidance expected around the application date |
+| Art. 4a bias-detection conditions | Guidance on the six cumulative conditions and how deployers evidence "strictly necessary" | _unassigned_ | 2026-10-01 | `No change` | New Art. 4a replaced the deleted Art. 10(5); GDPR interaction point |
+| New Art. 5 prohibitions in practice | Enforcement approach to the Art. 5(1a) safeguards test for general-purpose generators | _unassigned_ | 2026-11-01 | `No change` | Wording verified against OJ text; transitional deadline 2026-12-02 |
+| Harmonised standards for high-risk systems | CEN-CENELEC deliverables; standards readiness was the stated reason for the delay | _unassigned_ | 2026-10-01 | `No change` | Drives whether 2027-12-02 holds |
+| National competent authority designations | Member State designations and any national AI Act implementing law, incl. EEA status for Norway | _unassigned_ | 2026-10-01 | `No change` | Relevant to the EEA scope note in README |
 
 ---
 
@@ -217,7 +261,25 @@ Use this section to map key claims in this document to primary legal or regulato
 
 | Claim ID | Claim Summary | Source Type | Article / Reference | Link | Last Verified | Notes |
 |----------|---------------|-------------|---------------------|------|---------------|-------|
-| | | `Regulation` / `Guideline` / `Authority statement` | | | YYYY-MM-DD | |
+| RC-01 | Four-tier risk classification based on intended purpose and context of use | `Regulation` | 2024/1689 Arts. 5, 6, 50 | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-07-31 | Framework unchanged by the 2026 Omnibus |
+| RC-02 | Eight original prohibited practices | `Regulation` | 2024/1689 Art. 5(1) | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-07-31 | Applied from 2025-02-02 |
+| RC-03 | Two new prohibitions: non-consensual intimate material and CSAM | `Regulation` | 2026/1744 Art. 1(7), inserting 2024/1689 Art. 5(1)(ba), (bb) and Art. 5(1a), (1b) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified against OJ text. Apply from 2026-12-02 per Art. 113(3)(a) as amended |
+| RC-04 | Art. 6(3) exception unavailable where the system profiles natural persons | `Regulation` | 2024/1689 Art. 6(3) | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-07-31 | Unchanged |
+| RC-05 | Annex III high-risk obligations apply from 2027-12-02 | `Regulation` | 2026/1744 Art. 1(40), replacing 2024/1689 Art. 113(3)(c)(i) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified against OJ text. Was 2026-08-02. Covers Ch. III Sections 1, 2, 3 only |
+| RC-06 | Annex I / Art. 6(1) high-risk obligations apply from 2028-08-02 | `Regulation` | 2026/1744 Art. 1(40), replacing 2024/1689 Art. 113(3)(c)(ii) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified against OJ text. Was 2027-08-02 |
+| RC-07 | Art. 50 transparency obligations apply from 2026-08-02 and were not delayed | `Regulation` | 2024/1689 Art. 50; 2026/1744 Art. 1(20) amends only Art. 50(7) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Only the codes-of-practice paragraph was amended; the substantive duties in Art. 50(1) to (6) were untouched |
+| RC-08 | Art. 50(2) marking grace period to 2026-12-02 for systems already on market | `Regulation` | 2026/1744 Art. 1(39)(b), adding 2024/1689 Art. 111(4) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Delivered as a transitional provision in Art. 111, not as an amendment to Art. 50 |
+| RC-09 | Safety-component test narrowed for embedded AI | `Regulation` | 2026/1744 Art. 1(8), inserting 2024/1689 Art. 6(1a), (1b), (1c) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified against OJ text |
+| RC-10 | Bias-detection processing of special-category data restructured into new Art. 4a | `Regulation` | 2026/1744 Art. 1(6) inserting Art. 4a; Art. 1(9)(b) deleting Art. 10(5) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. **Art. 10(5) was deleted, not amended.** Art. 4a(2) extends the possibility to deployers and to non-high-risk systems, and creates no obligation |
+| RC-11 | GPAI obligations apply from 2025-08-02 | `Regulation` | 2024/1689 Arts. 51-56; Art. 113(3)(b) | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-07-31 | Unchanged |
+| RC-12 | AI Office is exclusively competent for supervision of same-undertaking GPAI-based systems and VLOP/VLOSE-integrated systems | `Regulation` | 2026/1744 Art. 1(31), replacing 2024/1689 Art. 75(1) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Note carve-outs for Annex I products, Annex III point 2, law enforcement/border/financial under Art. 74(6), and Annex III point 8 justice |
+| RC-13 | Art. 49 registration was not amended; burden reduced via Annex VIII | `Regulation` | 2026/1744 Art. 1(42), deleting Annex VIII Section B points 7 and 9 | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Art. 49 itself is untouched |
+| RC-14 | AI regulatory sandboxes operational by 2027-08-02 | `Regulation` | 2026/1744 Art. 1(22), replacing 2024/1689 Art. 57(1) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Was 2026-08-02 |
+| RC-15 | Annex X large-scale IT systems deadline unchanged at 2030-12-31 | `Regulation` | 2024/1689 Art. 111(1) | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-07-31 | Verified. Art. 111(1) was **not** amended; the 2027-08-02 reference date stands |
+
+> **Verification status: primary-source verified.** All rows above were checked against the Official Journal texts of Regulation (EU) 2024/1689 and Regulation (EU) 2026/1744 (CELEX 32026R1744) on 2026-07-31.
+>
+> The one item that remains genuinely open is an interpretation question rather than a sourcing gap: whether Chapter III Section 5 (Arts. 40-49) falls outside the deferral and therefore applies from 2026-08-02. See [`application-dates.md`](application-dates.md).
 
 ---
 ## Further Reading
@@ -226,6 +288,11 @@ Use this section to map key claims in this document to primary legal or regulato
 - [AI Act — Application Dates (this toolkit)](application-dates.md)
 - [European Commission — AI Act overview](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
 - [EU AI Act Compliance Checker (Future of Life Institute)](https://artificialintelligenceact.eu/)
+- [Regulation (EU) 2026/1744, Digital Omnibus on AI (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [What the 2026 Omnibus changed (this toolkit)](omnibus-2026-changes.md)
+- [Obligations by role (this toolkit)](obligations-by-role.md)
+
+> **Caution on third-party mirrors.** As of 2026-07-31, several widely used AI Act reference sites were still serving pre-Omnibus text, including the consolidated Article 113. Check the amendment status of anything you rely on.
 
 ---
 

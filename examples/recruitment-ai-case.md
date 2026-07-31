@@ -66,7 +66,8 @@ Typical questions the assistant should ask:
 
 Likely output themes:
 
-- AI Act: recruitment-related use case may trigger high-risk analysis depending on the function and deployment context
+- AI Act: recruitment-related use case may trigger high-risk analysis depending on the function and deployment context. Employment and worker management is an Annex III domain, so if high-risk is reached, the applicable deadline is **2 December 2027** following Regulation (EU) 2026/1744, not the previously reported 2 August 2026
+- AI Act transparency: separately from classification, if candidates interact with the tool directly, Art. 50 disclosure applies from **2 August 2026** and was **not** delayed by the Omnibus
 - GDPR: consent is likely a weak basis in an employment context; the assistant should test more defensible basis reasoning by processing stage
 - Article 22: the assistant should assess whether practical reliance on the tool leads to decisions with similarly significant effects
 - DPIA: likely strong case for a DPIA screen and probably a fuller DPIA if the tool materially influences candidate progression
