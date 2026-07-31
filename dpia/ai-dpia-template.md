@@ -1,6 +1,6 @@
 # Data Protection Impact Assessment (DPIA) Template for AI Systems
 
-> **Last updated:** 2026-02-23
+> **Last updated:** 2026-07-31
 >
 > This template addresses the requirements of **Article 35 GDPR** with additional considerations specific to AI and machine learning systems. It incorporates relevant obligations from the **EU AI Act** where applicable.
 >
@@ -270,6 +270,8 @@ Describe how the following rights are facilitated in the context of the AI syste
 
 *Complete this section if the AI system is classified as high-risk under the EU AI Act, or if transparency obligations apply.*
 
+> **Timing note.** Regulation (EU) 2026/1744 deferred the high-risk obligations to **2 December 2027** (Annex III) and **2 August 2028** (Annex I). **Art. 50 transparency was not deferred and applies from 2 August 2026.** None of the GDPR obligations in this template were affected: the Art. 35 DPIA duty is in force now, whatever the AI Act timeline says. See [`../eu-ai-act/application-dates.md`](../eu-ai-act/application-dates.md).
+
 | Requirement | Status | Evidence / Notes |
 |-------------|--------|------------------|
 | AI Act risk classification completed | ☐ Yes ☐ No ☐ N/A | |
@@ -282,8 +284,11 @@ Describe how the following rights are facilitated in the context of the AI syste
 | Accuracy, robustness, cybersecurity assessed (Art. 15) | ☐ Yes ☐ No ☐ N/A | |
 | Conformity assessment completed (Art. 43) | ☐ Yes ☐ No ☐ N/A | |
 | Registration in EU database where applicable (Art. 49, database established under Art. 71) | ☐ Yes ☐ No ☐ N/A | |
+| **Art. 50 transparency obligations addressed, from 2 August 2026** — AI-interaction disclosure, synthetic content marking, emotion recognition and biometric categorisation notices | ☐ Yes ☐ No ☐ N/A | Applies across risk tiers and was **not** deferred by the 2026 Omnibus |
+| **Special-category data used for bias detection under Art. 4a** — if yes, all six cumulative conditions documented | ☐ Yes ☐ No ☐ N/A | Art. 4a replaced the deleted Art. 10(5) and extends to deployers and non-high-risk systems. Ties to Art. 9(2)(g) GDPR. See [`../gdpr/lawful-basis-decision-tree.md`](../gdpr/lawful-basis-decision-tree.md) |
+| Art. 30 GDPR records state why special-category processing for bias detection was strictly necessary | ☐ Yes ☐ No ☐ N/A | Required by Art. 4a(1)(f); complete at the time, not retrospectively |
 | Deployer obligations met (Art. 26) — including use of provider-supplied information for this DPIA (Art. 26(9)) | ☐ Yes ☐ No ☐ N/A | |
-| Fundamental rights impact assessment completed, if required (Art. 27) — applies to bodies governed by public law and private entities providing public services | ☐ Yes ☐ No ☐ N/A | |
+| Fundamental rights impact assessment completed, if required (Art. 27) — applies to bodies governed by public law, private entities providing public services, and deployers of Annex III credit-scoring and life/health insurance pricing systems | ☐ Yes ☐ No ☐ N/A | |
 | Post-market monitoring plan in place (Art. 72) | ☐ Yes ☐ No ☐ N/A | |
 
 ---
@@ -336,7 +341,11 @@ Use this section to track known regulatory moving parts that may require updates
 
 | Topic | What to Watch | Owner | Review Date | Status | Notes |
 |-------|---------------|-------|-------------|--------|-------|
-| | | | | `No change` / `Update needed` | |
+| Art. 27 FRIA guidance and template | Commission or AI Office template for the fundamental rights impact assessment, and how it should dovetail with a GDPR DPIA | _unassigned_ | 2026-11-01 | `No change` | Overlap with this template is substantial; avoid duplicating work |
+| AI Act Art. 4a conditions | Supervisory authority expectations on evidencing the six conditions | _unassigned_ | 2026-11-01 | `No change` | New route as of 2026 |
+| EDPB DPIA criteria for AI | Revisions to the Art. 35(4) national lists or EDPB screening criteria as they apply to AI | _unassigned_ | 2026-12-01 | `No change` | National DPA lists vary |
+| Art. 50 transparency guidance | Commission guidance and codes of practice on marking and labelling ahead of 2026-08-02 | _unassigned_ | 2026-09-01 | `Update needed` | The live obligation this year |
+| National DPA AI guidance | Datatilsynet, CNIL, BfDI, AEPD positions on AI DPIAs | _unassigned_ | 2026-12-01 | `No change` | |
 
 ---
 
@@ -346,7 +355,15 @@ Use this section to map key claims in this document to primary legal or regulato
 
 | Claim ID | Claim Summary | Source Type | Article / Reference | Link | Last Verified | Notes |
 |----------|---------------|-------------|---------------------|------|---------------|-------|
-| | | `Regulation` / `Guideline` / `Authority statement` | | | YYYY-MM-DD | |
+| DP-01 | DPIA required where processing is likely to result in high risk to rights and freedoms | `Regulation` | 2016/679 Art. 35(1) | https://eur-lex.europa.eu/eli/reg/2016/679/oj | 2026-07-31 | |
+| DP-02 | Mandatory DPIA triggers: systematic extensive evaluation, large-scale special-category data, large-scale systematic monitoring of public areas | `Regulation` | 2016/679 Art. 35(3) | https://eur-lex.europa.eu/eli/reg/2016/679/oj | 2026-07-31 | |
+| DP-03 | Prior consultation with the supervisory authority where residual high risk remains | `Regulation` | 2016/679 Art. 36 | https://eur-lex.europa.eu/eli/reg/2016/679/oj | 2026-07-31 | |
+| DP-04 | AI Act high-risk classification does not itself trigger a GDPR DPIA | `Regulation` | 2016/679 Art. 35; 2024/1689 | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-07-31 | The two regimes are separate; in practice both usually apply |
+| DP-05 | Deployers must use provider-supplied information to support the DPIA | `Regulation` | 2024/1689 Art. 26(9) | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-07-31 | |
+| DP-06 | Art. 27 FRIA applies to public-law bodies, private entities providing public services, and deployers of Annex III credit-scoring and life/health insurance pricing systems | `Regulation` | 2024/1689 Art. 27(1) | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-07-31 | |
+| DP-07 | Art. 50 transparency applies from 2026-08-02 and was not deferred | `Regulation` | 2024/1689 Art. 50; 2026/1744 | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified against OJ text |
+| DP-08 | High-risk obligations deferred to 2027-12-02 and 2028-08-02 | `Regulation` | 2026/1744 Art. 1(40) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified against OJ text |
+| DP-09 | Art. 4a permits special-category processing for bias detection, subject to six cumulative conditions | `Regulation` | 2026/1744 Art. 1(6) inserting 2024/1689 Art. 4a | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Recital 9 ties it to Art. 9(2)(g) GDPR |
 
 ---
 ## Further Reading

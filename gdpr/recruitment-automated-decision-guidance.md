@@ -1,6 +1,6 @@
 # Recruitment and Automated Decision-Making Annex
 
-> **Last updated:** 2026-02-23
+> **Last updated:** 2026-07-31
 >
 > This annex provides practical guardrails for recruitment AI under GDPR and the EU AI Act. It is not legal advice.
 
@@ -11,6 +11,21 @@
 Recruitment and worker-management systems are listed in Annex III of the EU AI Act. Many recruitment deployments are therefore high-risk and require strict controls.
 
 Under GDPR, recruitment also creates elevated risk under Article 22 where decisions are solely automated and produce legal or similarly significant effects.
+
+### Timing after the 2026 Omnibus
+
+Regulation (EU) 2026/1744 moved the deadline but not the substance.
+
+| Obligation | Applies from |
+|---|---|
+| AI Act high-risk obligations for Annex III employment systems | **2 December 2027** (was 2 August 2026) |
+| AI Act Art. 50 transparency, where candidates interact with the system | **2 August 2026**, not delayed |
+| AI Act Art. 26(7): inform affected workers and their representatives before putting a high-risk system into use in the workplace | With the high-risk obligations |
+| **GDPR obligations, including Art. 22, Art. 9, DPIA, and transparency** | **Already in force.** Unaffected by anything in the AI Act timeline |
+
+> **The delay changes very little for recruitment.** The GDPR exposure in this area has always been the more immediate constraint, and none of it moved. A recruitment tool that would have failed an Article 22 analysis in July 2026 still fails it. Use the extra time for evidence quality, not to defer the work.
+
+See [`../eu-ai-act/application-dates.md`](../eu-ai-act/application-dates.md).
 
 ---
 
@@ -32,6 +47,7 @@ Under GDPR, recruitment also creates elevated risk under Article 22 where decisi
 - Contract basis is narrow and must be necessary for steps requested by the candidate.
 - Legitimate interests can support some preparatory processing, but does not bypass Article 22 constraints.
 - Where special category data is processed or inferred, add an Article 9(2) condition and safeguards.
+- For **bias and adverse-impact testing** that requires special-category data, AI Act Art. 4a now provides an Art. 9(2)(g) route, subject to six cumulative conditions. It is available now and is not deferred with the high-risk obligations. It is a permission, not an obligation, and it does not cover special-category processing for model training generally. See [`lawful-basis-decision-tree.md`](lawful-basis-decision-tree.md).
 
 ---
 
@@ -45,6 +61,8 @@ Use this test for each decision point:
 
 If all three are yes, Article 22 restrictions apply.
 
+> **Question 2 is where most assessments go wrong.** "A recruiter reviews the shortlist" does not by itself make a decision non-automated. If the recruiter in practice accepts the ranking, lacks the time, information, or authority to go behind it, or is not measured on doing so, the decision may still be solely automated in substance. Evidence the override: how often it happens, on what basis, and whether the reviewer sees the underlying features rather than only the score.
+
 Minimum safeguards include:
 - Human intervention by a qualified reviewer
 - Ability for the candidate to express their view
@@ -56,7 +74,7 @@ Minimum safeguards include:
 ## Operational Controls
 
 - Human-review protocol with mandatory override authority
-- Bias and adverse-impact testing before and after deployment
+- Bias and adverse-impact testing before and after deployment, with the Art. 4a conditions documented if special-category data is used for it
 - Traceable logs for features, thresholds, and overrides
 - Candidate-facing notice language that is specific and understandable
 - Retention limits and access controls for candidate data
@@ -76,9 +94,12 @@ Maintain these records:
 
 ## Cross-References in This Toolkit
 
-- GDPR decision tree: `gdpr/lawful-basis-decision-tree.md`
-- DPIA template: `dpia/ai-dpia-template.md`
-- AI Act risk classification: `eu-ai-act/risk-classification.md`
+- GDPR decision tree: [`lawful-basis-decision-tree.md`](lawful-basis-decision-tree.md)
+- DPIA template: [`../dpia/ai-dpia-template.md`](../dpia/ai-dpia-template.md)
+- AI Act risk classification: [`../eu-ai-act/risk-classification.md`](../eu-ai-act/risk-classification.md)
+- AI Act obligations by role: [`../eu-ai-act/obligations-by-role.md`](../eu-ai-act/obligations-by-role.md)
+- What the 2026 Omnibus changed: [`../eu-ai-act/omnibus-2026-changes.md`](../eu-ai-act/omnibus-2026-changes.md)
+- Worked example: [`../examples/recruitment-ai-case.md`](../examples/recruitment-ai-case.md)
 
 ---
 
@@ -86,6 +107,7 @@ Maintain these records:
 
 - GDPR (Regulation (EU) 2016/679): https://eur-lex.europa.eu/eli/reg/2016/679/oj
 - EU AI Act (Regulation (EU) 2024/1689): https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- Digital Omnibus on AI (Regulation (EU) 2026/1744): https://eur-lex.europa.eu/eli/reg/2026/1744/oj
 - EDPB guidance portal: https://edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_en
 
 ---

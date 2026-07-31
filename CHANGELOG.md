@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.1] - 2026-07-31
+
+Clears the first staleness review (issue #1). The five flagged files predated the Digital Omnibus.
+
+### Added
+- **`gdpr/lawful-basis-decision-tree.md`: new section on AI Act Article 4a as an Article 9(2)(g) route for bias detection.** Recital 9 of Regulation (EU) 2026/1744 states the basis is designed to satisfy Art. 9(2)(g) GDPR, treating bias detection and correction as a substantial public interest. Documents who can rely on it, the six cumulative conditions, and two points practitioners get wrong: it is a permission rather than a duty, and it is **available now** rather than deferred to December 2027, because Art. 4a sits in Chapter I and the recital explicitly enables preparatory work.
+- Timing table in `gdpr/recruitment-automated-decision-guidance.md` separating what moved (AI Act high-risk, to 2027-12-02) from what did not (Art. 50, and all GDPR obligations).
+- Note in the same file on why "a recruiter reviews the shortlist" often fails to make a decision non-automated under Art. 22.
+- `dpia/ai-dpia-template.md`: rows for Art. 50 transparency, Art. 4a bias-detection conditions, and the Art. 30 GDPR record required by Art. 4a(1)(f).
+- Worked example row and a "consensus is not verification" section in `resources/claim-source-register-template.md`, using the Art. 10(5) error as the case study.
+- Starter watchlist rows for 2026 to 2027 in `resources/regulatory-watchlist-template.md`, plus rows for amending regulations and harmonised standards.
+
+### Changed
+- Art. 9(2)(g) row in the lawful basis table now points to Art. 4a.
+- Recruitment and chatbot scenario rows carry post-Omnibus dates.
+- Art. 27 FRIA row in the DPIA template now includes deployers of Annex III credit-scoring and life/health insurance pricing systems, which were missing.
+- Claim-to-source registers and regulatory watchlists populated in all three legal files, replacing empty templates.
+- Cross-references in the recruitment annex converted from plain text to working relative links.
+
+### Verification
+- All new claims about Regulation (EU) 2026/1744 checked against the Official Journal text (CELEX 32026R1744), including Recital 9 for the Art. 9(2)(g) linkage and the Art. 4a application date.
+
 ## [0.4.0] - 2026-07-31
 
 Maintainability release. Makes staleness visible and gives readers a route to report it.

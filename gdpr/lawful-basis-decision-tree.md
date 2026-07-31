@@ -1,6 +1,6 @@
 # GDPR Lawful Basis Decision Tree for AI/ML Processing
 
-> **Last updated:** 2026-02-23
+> **Last updated:** 2026-07-31
 >
 > This document provides a practical decision tree for selecting a lawful basis under the GDPR (Regulation (EU) 2016/679) when processing personal data for AI and machine learning purposes. Always refer to the [official GDPR text](https://eur-lex.europa.eu/eli/reg/2016/679/oj) and relevant supervisory authority guidance.
 >
@@ -229,9 +229,49 @@ The most relevant Article 9(2) conditions for AI/ML are:
 |-----------|----------------|
 | **Explicit consent** — Art. 9(2)(a) | Data subject has given explicit consent for the specified purpose |
 | **Employment and social security** — Art. 9(2)(b) | Processing necessary for employment obligations (must be authorised by law) |
-| **Substantial public interest** — Art. 9(2)(g) | Must be authorised by Member State or EU law with appropriate safeguards |
+| **Substantial public interest** — Art. 9(2)(g) | Must be authorised by Member State or EU law with appropriate safeguards. **AI Act Art. 4a is now such an authorisation, for bias detection and correction. See the section below.** |
 | **Healthcare** — Art. 9(2)(h) | Processing necessary for medical diagnosis, treatment, or health system management |
 | **Scientific research** — Art. 9(2)(j) | Processing necessary for scientific research with appropriate safeguards under Art. 89(1) |
+
+### New in 2026: AI Act Article 4a as an Article 9(2)(g) route for bias detection
+
+Regulation (EU) 2026/1744 **deleted Article 10(5) of the AI Act and inserted a new free-standing Article 4a**, "Processing of special categories of personal data for bias detection and correction".
+
+This matters here because Recital 9 of that Regulation states the legal basis is designed to ensure compliance with **Article 9(2)(g) GDPR** (substantial public interest), Article 10(2)(g) of Regulation (EU) 2018/1725, and Article 10(a) of Directive (EU) 2016/680. It treats bias detection and correction as a substantial public interest in its own right, because it protects people from discrimination.
+
+**Who can rely on it**
+
+| Party | Provision | Scope |
+|---|---|---|
+| Providers of high-risk AI systems | Art. 4a(1) | Where strictly necessary for bias detection and correction under AI Act Art. 10(2)(f) and (g) |
+| **Deployers** of high-risk AI systems | Art. 4a(2) | Same conditions |
+| Providers and deployers of **other** AI systems and models, including non-high-risk | Art. 4a(2) | Where strictly necessary to address bias likely to affect health and safety, negatively affect fundamental rights, or lead to discrimination prohibited under Union law |
+
+The recital gives eligibility and risk-scoring tools for public permits and licences as an example of non-high-risk systems where bias can still restrict rights or block access to public services.
+
+**The six conditions are cumulative.** All of these must be met, in addition to GDPR itself:
+
+1. The bias detection and correction **cannot be effectively achieved by processing other data**, including synthetic or anonymised data.
+2. Technical limitations on re-use of the personal data, plus state-of-the-art security and privacy-preserving measures, **including pseudonymisation**.
+3. Measures ensuring the data is secured and protected, with **strict access controls and documented access**, confidentiality obligations, and access limited to authorised persons.
+4. The data is **not transmitted, transferred, or otherwise accessed by other parties**.
+5. The data is **deleted once the bias has been corrected** or the retention period ends, whichever comes first.
+6. Your **Article 30 records of processing** state why the processing was strictly necessary and why the objective could not be achieved by processing other data.
+
+**Two things practitioners get wrong about this**
+
+- **It is a permission, not a duty.** Article 4a(2) says expressly that it creates no obligation to carry out bias detection and correction. Do not read it as a new testing mandate.
+- **It is available now, not in December 2027.** Article 4a sits in Chapter I of the AI Act, which has applied since 2 February 2025, and Recital 9 says the basis should apply from the AI Act's date of entry into application precisely so that providers can lawfully do this work **in preparation for** high-risk compliance. The deferral of the high-risk obligations to 2 December 2027 does not delay this legal basis.
+
+**Before relying on it**
+
+- Confirm you genuinely cannot achieve the objective with anonymised or synthetic data. Condition 1 is the one most likely to fail on inspection.
+- Write the necessity reasoning into your Article 30 record at the time, not retrospectively. Condition 6 makes that a legal requirement rather than good practice.
+- Set the deletion trigger explicitly. "Once the bias has been corrected" needs an operational definition.
+
+> This route is specific to bias detection and correction. It does not authorise special-category processing for model training, evaluation, or performance improvement generally.
+
+---
 
 > **Note:** The "legitimate interests" basis under Article 6(1)(f) does **not** have a corresponding condition in Article 9(2). If you are processing special category data, you cannot rely on legitimate interests alone.
 
@@ -296,9 +336,9 @@ Does the AI system make a decision about an individual?
 | Scenario | Likely Primary Basis | Key Considerations |
 |----------|---------------------|--------------------|
 | Training a model on customer data to improve service | Legitimate interests (6(1)(f)) | Document LIA; consider anonymisation of training data |
-| AI chatbot handling customer enquiries | Contract (6(1)(b)) for service delivery; Legitimate interests (6(1)(f)) for improvement | Transparency obligations under AI Act also apply |
+| AI chatbot handling customer enquiries | Contract (6(1)(b)) for service delivery; Legitimate interests (6(1)(f)) for improvement | AI Act Art. 50 transparency applies from **2 August 2026** and was not delayed by the 2026 Omnibus: users must be told they are interacting with an AI system |
 | Fraud detection model | Legal obligation (6(1)(c)) or Legitimate interests (6(1)(f)) | Depends on whether fraud monitoring is legally mandated |
-| AI recruitment/CV screening | Member State law or Article 22(2) exception analysis required; do not assume consent is valid in employment contexts | High-risk under AI Act; DPIA required; Art. 22 likely applies. Use explicit legal analysis of Art. 22(2) exceptions and national employment law before deployment |
+| AI recruitment/CV screening | Member State law or Article 22(2) exception analysis required; do not assume consent is valid in employment contexts | High-risk under the AI Act (Annex III employment), with obligations applying from **2 December 2027** following Regulation (EU) 2026/1744. AI Act Art. 50 transparency applies from **2 August 2026** regardless. DPIA required; Art. 22 likely applies. Use explicit legal analysis of Art. 22(2) exceptions and national employment law before deployment |
 | AI diagnostic tool in healthcare | Public task (6(1)(e)) for public sector; Consent (6(1)(a)) or Legitimate interests (6(1)(f)) for private sector | Special category data — need Art. 9(2) condition (typically Art. 9(2)(h) for healthcare); DPIA required |
 | Sentiment analysis on customer reviews | Legitimate interests (6(1)(f)) | If inferring emotions, check AI Act transparency requirements; if analysis could reveal special category data (political opinions, health indicators, etc.), an Art. 9(2) condition is also required |
 | Training on publicly available data | Legitimate interests (6(1)(f)) | "Publicly available" does not mean "free to use" — still need lawful basis |
@@ -352,7 +392,11 @@ Use this section to track known regulatory moving parts that may require updates
 
 | Topic | What to Watch | Owner | Review Date | Status | Notes |
 |-------|---------------|-------|-------------|--------|-------|
-| | | | | `No change` / `Update needed` | |
+| AI Act Art. 4a guidance | How supervisory authorities expect the six conditions, especially "no other data" and the deletion trigger, to be evidenced | _unassigned_ | 2026-11-01 | `No change` | New route; no authority guidance yet at time of writing |
+| EDPB opinion on AI models and GDPR | Follow-up guidance or revision to the December 2024 opinion on legitimate interests for AI development and deployment | _unassigned_ | 2026-10-01 | `No change` | Directly affects Step 6 and the training-data scenarios |
+| Art. 22 and AI Act interaction | Guidance or case law on when AI-assisted decisions become "solely automated" in practice | _unassigned_ | 2026-11-01 | `No change` | The weakest point in most recruitment and scoring assessments |
+| National employment law variation | Member State rules on workplace AI, works council consultation, and Art. 88 GDPR provisions | _unassigned_ | 2026-12-01 | `No change` | Consent is rarely valid in employment; national law usually decides |
+| CJEU case law on legitimate interests | Decisions affecting the balancing test for AI training and profiling | _unassigned_ | 2026-12-01 | `No change` | |
 
 ---
 
@@ -362,7 +406,19 @@ Use this section to map key claims in this document to primary legal or regulato
 
 | Claim ID | Claim Summary | Source Type | Article / Reference | Link | Last Verified | Notes |
 |----------|---------------|-------------|---------------------|------|---------------|-------|
-| | | `Regulation` / `Guideline` / `Authority statement` | | | YYYY-MM-DD | |
+| LB-01 | Any personal data processing needs an Art. 6(1) basis; special-category data needs an Art. 9(2) condition in addition | `Regulation` | 2016/679 Arts. 6(1), 9 | https://eur-lex.europa.eu/eli/reg/2016/679/oj | 2026-07-31 | |
+| LB-02 | No hierarchy among the six lawful bases | `Regulation` | 2016/679 Art. 6(1) | https://eur-lex.europa.eu/eli/reg/2016/679/oj | 2026-07-31 | Structured analysis here is an aid, not a ranking |
+| LB-03 | Legitimate interests has no corresponding Art. 9(2) condition | `Regulation` | 2016/679 Arts. 6(1)(f), 9(2) | https://eur-lex.europa.eu/eli/reg/2016/679/oj | 2026-07-31 | Verified by absence: no Art. 9(2) condition maps to 6(1)(f) |
+| LB-04 | Art. 22 restricts solely automated decisions with legal or similarly significant effects, subject to three exceptions | `Regulation` | 2016/679 Art. 22(1), (2) | https://eur-lex.europa.eu/eli/reg/2016/679/oj | 2026-07-31 | |
+| LB-05 | Art. 22(4) restricts special-category data in automated decisions to Art. 9(2)(a) or (g) | `Regulation` | 2016/679 Art. 22(4) | https://eur-lex.europa.eu/eli/reg/2016/679/oj | 2026-07-31 | |
+| LB-06 | **AI Act Art. 4a provides an Art. 9(2)(g) route for bias detection and correction** | `Regulation` | 2026/1744 Art. 1(6) inserting 2024/1689 Art. 4a; Recital 9 | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified against OJ text. Recital 9 states it ensures compliance with Art. 9(2)(g) GDPR |
+| LB-07 | Art. 4a extends to deployers and to non-high-risk systems, and creates no obligation | `Regulation` | 2026/1744, 2024/1689 Art. 4a(2) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Final sentence of Art. 4a(2) is explicit |
+| LB-08 | Art. 4a applies from the AI Act's date of entry into application, not the deferred high-risk date | `Recital` | 2026/1744 Recital 9; 2024/1689 Art. 113(3)(a) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Art. 4a sits in Chapter I, applicable since 2025-02-02. Recital states the intent is to enable preparatory work |
+| LB-09 | Art. 10(5) of the AI Act was deleted | `Regulation` | 2026/1744 Art. 1(9)(b) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Content relocated and extended into Art. 4a |
+| LB-10 | DPIA mandatory for systematic extensive profiling with significant effects, and large-scale special-category processing | `Regulation` | 2016/679 Art. 35(3)(a), (b) | https://eur-lex.europa.eu/eli/reg/2016/679/oj | 2026-07-31 | |
+| LB-11 | Recruitment AI is Annex III high-risk with obligations from 2027-12-02 | `Regulation` | 2024/1689 Annex III point 4; 2026/1744 Art. 1(40) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | See `../eu-ai-act/application-dates.md` |
+
+> Claims LB-06 to LB-09 and LB-11 were checked against the Official Journal text of Regulation (EU) 2026/1744 (CELEX 32026R1744) on 2026-07-31.
 
 ---
 ## Further Reading
@@ -372,6 +428,9 @@ Use this section to map key claims in this document to primary legal or regulato
 - [ICO Guidance — Lawful basis for processing](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/) *(UK GDPR — largely aligned with EU GDPR but may diverge on specific points)*
 - [ICO Guidance — AI and data protection](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/) *(UK GDPR)*
 - [EDPB Guidelines on automated individual decision-making and profiling](https://edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_en)
+- [EDPB Opinion 28/2024 on AI models and GDPR principles](https://www.edpb.europa.eu/news/news/2024/edpb-opinion-ai-models-gdpr-principles-support-responsible-ai_en) (anonymity of models, legitimate interests for AI development and deployment)
+- [AI Act Art. 4a and the 2026 changes (this toolkit)](../eu-ai-act/omnibus-2026-changes.md)
+- [Obligations by role under the AI Act (this toolkit)](../eu-ai-act/obligations-by-role.md)
 - [Article 29 Working Party — Opinion on legitimate interests (WP217)](https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/index_en.htm)
 
 ---
