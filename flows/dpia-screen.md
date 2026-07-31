@@ -1,5 +1,7 @@
 # Flow: DPIA Screen
 
+> **Last updated:** 2026-04-03
+
 Use this flow to decide whether a DPIA is likely required and to prepare the structure for a fuller DPIA if needed.
 
 ## Use When

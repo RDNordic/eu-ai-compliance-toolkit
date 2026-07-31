@@ -1,5 +1,7 @@
 # Sample Output: Recruitment Source-Backed Analysis
 
+> **Last updated:** 2026-04-03
+
 ## Objective
 
 Assess an AI recruitment tool that scores and ranks candidates before recruiter review.

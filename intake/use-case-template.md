@@ -1,4 +1,6 @@
-﻿# Use Case Intake Template
+# Use Case Intake Template
+
+> **Last updated:** 2026-02-23
 
 - Project name:
 - Jurisdiction(s):

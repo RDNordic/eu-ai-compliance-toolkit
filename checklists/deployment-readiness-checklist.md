@@ -1,5 +1,7 @@
 # Deployment Readiness Checklist
 
+> **Last updated:** 2026-04-03
+
 Use this checklist before pilot launch, wider rollout, or production release of an AI system.
 
 ## System Understanding

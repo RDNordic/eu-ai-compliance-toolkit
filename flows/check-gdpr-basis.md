@@ -1,5 +1,7 @@
 # Flow: Check GDPR Basis
 
+> **Last updated:** 2026-04-03
+
 Use this flow to identify candidate lawful bases, Article 9 issues, and Article 22 concerns for an AI-related processing activity.
 
 ## Use When

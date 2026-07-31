@@ -1,5 +1,7 @@
 # EU AI Compliance Toolkit
 
+> **Last updated:** 2026-07-31
+
 Turn Claude, Codex, and similar workspace assistants into structured EU AI Act and GDPR compliance operators for product teams.
 
 > ### Updated for the 2026 Digital Omnibus

@@ -1,5 +1,7 @@
 # Privacy
 
+> **Last updated:** 2026-04-03
+
 ## Core Point
 
 Cloning this repository is not the same thing as sending data to an AI provider.

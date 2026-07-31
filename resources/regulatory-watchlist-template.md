@@ -1,4 +1,6 @@
-﻿# Regulatory Watchlist Template
+# Regulatory Watchlist Template
+
+> **Last updated:** 2026-02-23
 
 Use this template to maintain a live list of regulatory changes that may require updates to a compliance document.
 

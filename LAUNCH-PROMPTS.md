@@ -1,5 +1,7 @@
 # Launch Prompts
 
+> **Last updated:** 2026-05-12
+
 These are copy-paste prompts for people trying the repo for the first time in Claude, Codex, Cursor, or similar tools.
 
 ## Prompt 0: GitHub Link Only

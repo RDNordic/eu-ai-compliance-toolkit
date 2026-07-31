@@ -1,4 +1,6 @@
-﻿# DPIA Minimum (Starter)
+# DPIA Minimum (Starter)
+
+> **Last updated:** 2026-02-23
 
 Minimum sections required:
 - System purpose and scope

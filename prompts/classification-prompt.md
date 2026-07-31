@@ -1,5 +1,7 @@
 # Prompt Pack: AI Act Classification
 
+> **Last updated:** 2026-04-03
+
 Use this prompt when you want an assistant to classify a use case under the EU AI Act using this repository.
 
 ## Prompt

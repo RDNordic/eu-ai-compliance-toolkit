@@ -1,5 +1,7 @@
 # Worked Example: Recruitment AI Screening Tool
 
+> **Last updated:** 2026-07-31
+
 This example shows how a team might use the repo to assess a hiring-support tool that ranks candidates before human review.
 
 ## Scenario

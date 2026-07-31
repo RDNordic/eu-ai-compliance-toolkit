@@ -1,4 +1,6 @@
-﻿# AGENTS.md (Template)
+# AGENTS.md (Template)
+
+> **Last updated:** 2026-02-23
 
 Define role-specialized sub-agents for compliance workflows.
 

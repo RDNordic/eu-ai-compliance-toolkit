@@ -1,5 +1,7 @@
 # Flow: Release Governance Check
 
+> **Last updated:** 2026-04-03
+
 Use this flow before internal release, public launch, pilot expansion, or procurement sign-off.
 
 ## Use When

@@ -1,5 +1,7 @@
 # Playbook: Codex
 
+> **Last updated:** 2026-04-03
+
 Use this repo in a Codex workspace by asking the assistant to treat the repository as an operating kit rather than just a document library.
 
 ## Recommended Pattern

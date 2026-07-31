@@ -1,5 +1,7 @@
 # Questionnaire: Vendor AI Tooling
 
+> **Last updated:** 2026-04-03
+
 Use this questionnaire before adopting an external AI tool, model API, chatbot platform, or AI-enabled SaaS product.
 
 ## Questions

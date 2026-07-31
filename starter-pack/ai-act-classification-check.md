@@ -1,4 +1,6 @@
-﻿# AI Act Classification Check (Starter)
+# AI Act Classification Check (Starter)
+
+> **Last updated:** 2026-02-23
 
 1. Define intended purpose.
 2. Check prohibited practices (Art. 5).

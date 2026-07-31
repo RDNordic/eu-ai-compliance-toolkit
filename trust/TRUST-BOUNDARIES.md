@@ -1,5 +1,7 @@
 # Trust Boundaries
 
+> **Last updated:** 2026-04-03
+
 This repo is useful only if users understand what it does and what it does not control.
 
 ## Boundary 1: The Repo

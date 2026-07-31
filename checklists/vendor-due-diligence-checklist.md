@@ -1,5 +1,7 @@
 # Vendor Due Diligence Checklist
 
+> **Last updated:** 2026-04-03
+
 Use this checklist when assessing an AI vendor or AI-enabled supplier.
 
 ## Product And Supplier Basics

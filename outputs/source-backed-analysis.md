@@ -1,5 +1,7 @@
 # Output Template: Source-Backed Analysis
 
+> **Last updated:** 2026-04-03
+
 Use this template for most analytical responses.
 
 ## Fields

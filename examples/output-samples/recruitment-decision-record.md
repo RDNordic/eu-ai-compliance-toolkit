@@ -1,5 +1,7 @@
 # Sample Output: Recruitment Decision Record
 
+> **Last updated:** 2026-04-03
+
 ## Objective
 
 Record the current governance position for a proposed AI recruitment screening tool before procurement or deployment approval.

@@ -1,5 +1,7 @@
 # EU AI Compliance Toolkit — Claude Code Quickstart
 
+> **Last updated:** 2026-07-31
+
 This folder contains everything you need to run the EU AI Compliance Toolkit as an agentic intake session using Claude Code CLI in VS Code.
 
 Maintained by R&D Nordic Consultancy | https://github.com/RDNordic/eu-ai-compliance-toolkit

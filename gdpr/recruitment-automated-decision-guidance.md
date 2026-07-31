@@ -1,6 +1,6 @@
-﻿# Recruitment and Automated Decision-Making Annex
+# Recruitment and Automated Decision-Making Annex
 
-> Last updated: 2026-02-17
+> **Last updated:** 2026-02-23
 >
 > This annex provides practical guardrails for recruitment AI under GDPR and the EU AI Act. It is not legal advice.
 

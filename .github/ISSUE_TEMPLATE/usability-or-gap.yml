@@ -1,0 +1,60 @@
+name: Usability problem or content gap
+description: Something was confusing, missing, or did not work when you tried to use the toolkit.
+title: "[Gap] "
+labels: ["usability"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This toolkit is meant to be operated, not just read. If a flow sent you in circles, an assistant did the wrong thing with it, or something you needed was not there, that is worth reporting.
+
+        **Please do not include client-confidential material or personal data.** Redact or use a synthetic example.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - "Missing content: something I needed is not in the repo"
+        - "Confusing: I could not tell what to do next"
+        - "Assistant behaviour: the AI tool did the wrong thing with these files"
+        - "Broken instructions: a documented step does not work"
+        - "Output quality: the generated artefact was not usable"
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: What were you trying to do?
+      placeholder: Classify a vendor-supplied CV screening tool and decide whether to escalate to our DPO.
+    validations:
+      required: true
+
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened instead?
+    validations:
+      required: true
+
+  - type: input
+    id: entrypoint
+    attributes:
+      label: Where did you start?
+      placeholder: START-HERE.md, or the Prompt 0 launch prompt
+
+  - type: input
+    id: tool
+    attributes:
+      label: Which AI tool, if any?
+      description: Assistants vary a lot in how they follow these files. Knowing which one helps.
+      placeholder: Claude Code / ChatGPT web / Copilot / none, read it myself
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: This report contains no confidential, client, or personal data.
+          required: true

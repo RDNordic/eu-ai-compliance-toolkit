@@ -1,5 +1,7 @@
 # Worked Example: Public-Sector Service Chatbot
 
+> **Last updated:** 2026-07-31
+
 This example shows how a team might use the repo to assess a public-sector chatbot that helps citizens navigate services and submit requests.
 
 ## Scenario

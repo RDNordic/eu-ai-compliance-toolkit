@@ -1,5 +1,7 @@
 # Playbook: Claude Code
 
+> **Last updated:** 2026-04-03
+
 Use this repo in a Claude Code workspace by keeping the repository available to the assistant and starting from [`../START-HERE.md`](../START-HERE.md).
 
 ## Recommended Pattern

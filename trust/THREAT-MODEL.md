@@ -1,5 +1,7 @@
 # Threat Model
 
+> **Last updated:** 2026-04-03
+
 This is a lightweight threat model for using this repository with AI assistants.
 
 ## Main Threats

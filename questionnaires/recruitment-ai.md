@@ -1,5 +1,7 @@
 # Questionnaire: Recruitment AI
 
+> **Last updated:** 2026-04-03
+
 Use this questionnaire when the AI system supports hiring, candidate screening, ranking, interview analysis, or workforce decisions.
 
 ## Questions

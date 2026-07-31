@@ -1,5 +1,7 @@
 # Output Template: Compliance Decision Record
 
+> **Last updated:** 2026-04-03
+
 Use this template when a team needs a reusable governance artifact rather than conversational analysis.
 
 ## Fields

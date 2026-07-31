@@ -1,5 +1,7 @@
 # Questionnaire: Public-Sector Chatbot
 
+> **Last updated:** 2026-04-03
+
 Use this questionnaire for public-sector assistants, service chatbots, triage bots, or citizen-facing information tools.
 
 ## Questions

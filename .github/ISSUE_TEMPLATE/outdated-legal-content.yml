@@ -1,0 +1,77 @@
+name: Outdated or incorrect legal content
+description: Report a claim in this toolkit that no longer matches the law, or never did.
+title: "[Legal] "
+labels: ["legal-accuracy", "needs-verification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for this. Regulatory drift is this repository's main failure mode, so these reports are the most valuable contribution you can make.
+
+        **Please do not include client-confidential material, personal data, or anything you are not free to share publicly.**
+
+  - type: input
+    id: file
+    attributes:
+      label: File and line
+      description: Which file contains the claim? A line number or heading helps.
+      placeholder: eu-ai-act/application-dates.md, Core Timeline table
+    validations:
+      required: true
+
+  - type: textarea
+    id: claim
+    attributes:
+      label: What the toolkit currently says
+      description: Quote or paraphrase the claim you believe is wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should say
+      description: The correct position, as precisely as you can state it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Primary source
+      description: |
+        A link to the official text where possible: EUR-Lex, an Official Journal citation, or supervisory authority guidance. Article and paragraph numbers are ideal.
+
+        Secondary sources such as law firm commentary are useful for locating a change, but this repo verifies against the enacted text before publishing, so a primary citation moves things much faster.
+      placeholder: |
+        Regulation (EU) 2026/1744, Art. 1(40), replacing Art. 113(3)(c) of Regulation (EU) 2024/1689
+        https://eur-lex.europa.eu/eli/reg/2026/1744/oj
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: How wrong is it?
+      options:
+        - "Materially misleading: could cause a wrong compliance decision"
+        - "Out of date but not misleading: superseded, still directionally right"
+        - "Imprecise: correct in substance, wrong article or wording"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: jurisdiction
+    attributes:
+      label: Jurisdiction, if relevant
+      description: This repo is written for EU/EEA. Note it here if your point is national or EEA-specific.
+      placeholder: Norway (EEA incorporation timing)
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: This report contains no confidential, client, or personal data.
+          required: true

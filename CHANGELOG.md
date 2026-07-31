@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] - 2026-07-31
+
+Maintainability release. Makes staleness visible and gives readers a route to report it.
+
+### Added
+- `.github/ISSUE_TEMPLATE/outdated-legal-content.yml` requiring a primary-source citation, so reports arrive in a form that can be acted on directly.
+- `.github/ISSUE_TEMPLATE/usability-or-gap.yml` for confusing, missing, or broken content, capturing which AI tool was used.
+- `.github/PULL_REQUEST_TEMPLATE.md` with a separate checklist for legal-content changes.
+- `.github/workflows/checks.yml`: verifies relative links resolve and every document carries a valid `Last updated` header, on push and pull request.
+- `.github/workflows/staleness.yml`: monthly review check that files a tracking issue when content ages past 120 days for legal content or 270 days for everything else.
+- Checks are stdlib-only Python in `.github/scripts/`, with no third-party actions beyond `actions/checkout`.
+
+### Changed
+- **`Last updated` headers added to 54 files and normalised on 3 more**, so 61 of 63 documents now carry one, up from 5. Each date is the file's actual last-commit date rather than a blanket stamp. `CHANGELOG.md` and `source-update/triage-summary.md` are exempt and carry their own dating.
+- `SECURITY.md` rewritten as a scoped reporting policy with an in-scope/out-of-scope table, private reporting for secrets and personal data, and an explicit statement that legal inaccuracy is a content issue. `trust/SECURITY.md` keeps the operational guidance and now points to it, removing the duplication between the two.
+- `CONTRIBUTING.md` gained a sourcing-discipline section for legal content, the CELLAR retrieval method, and instructions for running the checks locally.
+- Stray UTF-8 BOMs removed from files that carried them.
+
+### Known
+- The staleness check immediately flags `gdpr/lawful-basis-decision-tree.md`, `gdpr/recruitment-automated-decision-guidance.md`, `dpia/ai-dpia-template.md`, and the two `resources/` templates as overdue. These have not been reviewed since February 2026 and predate the Digital Omnibus. The new Art. 4a bias-detection provision is directly relevant to the GDPR files.
+
 ## [0.3.0] - 2026-07-31
 
 Regulatory currency release. Brings the legal core in line with Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026.

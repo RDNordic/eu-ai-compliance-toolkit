@@ -1,6 +1,6 @@
 # Data Protection Impact Assessment (DPIA) Template for AI Systems
 
-> **Last updated:** February 2026
+> **Last updated:** 2026-02-23
 >
 > This template addresses the requirements of **Article 35 GDPR** with additional considerations specific to AI and machine learning systems. It incorporates relevant obligations from the **EU AI Act** where applicable.
 >

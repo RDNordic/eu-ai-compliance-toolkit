@@ -1,0 +1,54 @@
+name: Regulatory staleness review
+
+# Regulatory drift is this repository's main failure mode. This runs monthly and
+# files a single tracking issue when content ages past review thresholds, so a
+# review is prompted rather than depending on someone remembering.
+
+on:
+  schedule:
+    - cron: "0 9 1 * *"  # 09:00 UTC on the 1st of each month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  staleness:
+    name: Check content age
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build staleness report
+        id: report
+        run: python3 .github/scripts/check_staleness.py --report staleness-report.md
+
+      - name: File or update tracking issue
+        if: steps.report.outputs.overdue != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          TITLE="Content review due: $(date -u +'%B %Y')"
+
+          EXISTING=$(gh issue list \
+            --repo "$REPO" \
+            --state open \
+            --label content-review \
+            --json number,title \
+            --jq '.[0].number // empty')
+
+          if [ -n "$EXISTING" ]; then
+            echo "Updating existing issue #$EXISTING"
+            gh issue comment "$EXISTING" --repo "$REPO" --body-file staleness-report.md
+          else
+            echo "Opening new tracking issue"
+            gh issue create \
+              --repo "$REPO" \
+              --title "$TITLE" \
+              --label content-review \
+              --body-file staleness-report.md
+          fi

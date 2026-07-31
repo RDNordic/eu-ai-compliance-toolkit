@@ -1,5 +1,7 @@
 # Safe Usage
 
+> **Last updated:** 2026-04-03
+
 Use this repository as if it were a disciplined operating kit, not a magic compliance button.
 
 ## Recommended Safe Workflow

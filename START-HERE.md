@@ -1,5 +1,7 @@
 # Start Here
 
+> **Last updated:** 2026-05-12
+
 Use this file as the operating entrypoint for the repository.
 
 If you are an AI assistant working in this repo, do not start by dumping a generic explanation. Route the user into a concrete workflow.

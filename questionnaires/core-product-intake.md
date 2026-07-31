@@ -1,5 +1,7 @@
 # Questionnaire: Core Product Intake
 
+> **Last updated:** 2026-04-03
+
 Use this intake before running most flows.
 
 Ask the user these questions in a structured way. If they do not know an answer, mark it as unknown rather than guessing.

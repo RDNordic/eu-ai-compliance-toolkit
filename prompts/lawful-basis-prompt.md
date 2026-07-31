@@ -1,5 +1,7 @@
 # Prompt Pack: GDPR Lawful Basis
 
+> **Last updated:** 2026-04-03
+
 Use this prompt when you want an assistant to assess GDPR lawful basis, Article 9 issues, and Article 22 concerns.
 
 ## Prompt

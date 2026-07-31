@@ -1,5 +1,7 @@
 # Flow: Vendor Risk Review
 
+> **Last updated:** 2026-04-03
+
 Use this flow to review an external AI vendor, AI-enabled SaaS product, or model provider before adoption.
 
 ## Use When

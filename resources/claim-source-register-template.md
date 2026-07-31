@@ -1,4 +1,6 @@
-﻿# Claim-to-Source Register Template
+# Claim-to-Source Register Template
+
+> **Last updated:** 2026-02-23
 
 Use this template to map legal/compliance claims to primary sources and verification dates.
 

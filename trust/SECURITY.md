@@ -1,5 +1,7 @@
 # Security
 
+> **Last updated:** 2026-04-03
+
 ## What This Repo Is
 
 This repository is primarily markdown guidance, questionnaires, templates, and operating instructions. It is intended to be low-risk to clone and inspect.
@@ -35,4 +37,6 @@ Examples:
 
 ## Reporting
 
-If you identify a substantive issue in the repo content, trust framing, or operational guidance, raise it through the issue tracker rather than assuming the repo silently “handles” it.
+See [`../SECURITY.md`](../SECURITY.md) for what is in scope and how to report it. Anything involving leaked secrets, credentials, or personal data should go to contact@rdnordic.com rather than a public issue.
+
+Raise substantive issues in the repo content, trust framing, or operational guidance rather than assuming the repo silently “handles” it.

@@ -1,5 +1,7 @@
 # Output Template: Executive Summary
 
+> **Last updated:** 2026-04-03
+
 Use this template for leadership, sponsors, or procurement approvers who need a short decision-oriented view.
 
 ## Fields

@@ -1,5 +1,7 @@
 # Runbook
 
+> **Last updated:** 2026-04-03
+
 This repository is designed to be operated as a repeatable compliance workflow inside an AI-assisted workspace.
 
 ## Intended Usage

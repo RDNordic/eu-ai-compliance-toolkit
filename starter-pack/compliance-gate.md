@@ -1,4 +1,6 @@
-﻿# Compliance Gate (Starter)
+# Compliance Gate (Starter)
+
+> **Last updated:** 2026-02-23
 
 Use before release/deployment.
 

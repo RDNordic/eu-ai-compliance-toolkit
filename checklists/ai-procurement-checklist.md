@@ -1,5 +1,7 @@
 # AI Procurement Checklist
 
+> **Last updated:** 2026-04-03
+
 Use this checklist before procuring an external AI tool, model API, or AI-enabled SaaS product.
 
 ## Scope

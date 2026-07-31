@@ -1,5 +1,7 @@
 # Playbook: Cursor
 
+> **Last updated:** 2026-04-03
+
 Use this repo in Cursor or similar editor-native assistants by keeping the full repository in workspace context and working from [`../START-HERE.md`](../START-HERE.md).
 
 ## Recommended Pattern

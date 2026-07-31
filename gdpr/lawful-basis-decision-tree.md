@@ -1,6 +1,6 @@
 # GDPR Lawful Basis Decision Tree for AI/ML Processing
 
-> **Last updated:** February 2026
+> **Last updated:** 2026-02-23
 >
 > This document provides a practical decision tree for selecting a lawful basis under the GDPR (Regulation (EU) 2016/679) when processing personal data for AI and machine learning purposes. Always refer to the [official GDPR text](https://eur-lex.europa.eu/eli/reg/2016/679/oj) and relevant supervisory authority guidance.
 >

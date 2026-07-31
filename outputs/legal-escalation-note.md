@@ -1,5 +1,7 @@
 # Output Template: Legal Escalation Note
 
+> **Last updated:** 2026-04-03
+
 Use this template when there are unresolved issues that should be reviewed by legal counsel, DPO functions, or formal governance bodies.
 
 ## Fields

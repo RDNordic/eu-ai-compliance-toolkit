@@ -1,0 +1,24 @@
+name: Content checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Links and document headers
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify relative links resolve
+        run: python3 .github/scripts/check_links.py
+
+      - name: Verify Last updated headers
+        run: python3 .github/scripts/check_headers.py

@@ -1,5 +1,7 @@
 # Prompt Pack: DPIA Draft
 
+> **Last updated:** 2026-04-03
+
 Use this prompt when you want an assistant to screen whether a DPIA is likely required and draft the structure for a fuller DPIA.
 
 ## Prompt

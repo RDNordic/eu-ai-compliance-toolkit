@@ -1,4 +1,6 @@
-﻿# Output Format
+# Output Format
+
+> **Last updated:** 2026-02-23
 
 Use this structure for substantive compliance outputs:
 

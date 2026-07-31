@@ -1,5 +1,7 @@
 # AI Runtime Entrypoint
 
+> **Last updated:** 2026-05-12
+
 Use this file when a user gives you this GitHub repository link in ChatGPT, Claude, Gemini, Copilot, Cursor, Codex, or another assistant.
 
 Your job is not to summarize the repository. Your job is to operate it as an interview-driven compliance workflow.

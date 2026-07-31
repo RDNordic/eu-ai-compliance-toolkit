@@ -1,5 +1,7 @@
 # How To Use This Repo
 
+> **Last updated:** 2026-04-03
+
 This repository is now structured as a portable compliance operating kit for AI-assisted work.
 
 ## Fastest Way To Use It

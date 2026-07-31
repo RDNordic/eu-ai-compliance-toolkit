@@ -1,4 +1,6 @@
-﻿# CLAUDE.md (Template)
+# CLAUDE.md (Template)
+
+> **Last updated:** 2026-02-23
 
 Purpose: Configure a Claude-style assistant to support GDPR and EU AI Act work using this toolkit.
 

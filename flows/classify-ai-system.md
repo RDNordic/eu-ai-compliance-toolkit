@@ -1,5 +1,7 @@
 # Flow: Classify AI System
 
+> **Last updated:** 2026-04-03
+
 Use this flow to determine the likely EU AI Act classification of a use case and identify the immediate obligations that follow.
 
 ## Use When

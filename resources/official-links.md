@@ -1,5 +1,7 @@
 # Official Links
 
+> **Last updated:** 2026-04-03
+
 Curated primary and official sources relevant to this repository.
 
 ## EU AI Act

@@ -1,5 +1,7 @@
 # Prompt Pack: Vendor Risk Review
 
+> **Last updated:** 2026-04-03
+
 Use this prompt when you want an assistant to review an external AI vendor or AI-enabled tool.
 
 ## Prompt

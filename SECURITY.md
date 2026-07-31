@@ -1,26 +1,41 @@
 # Security Policy
 
-This repository is a markdown-first compliance operating kit. It does not include an installer, background service, or telemetry component.
+> **Last updated:** 2026-07-31
 
-## Main Security Note
+This is the repository's security **reporting** policy. For the substantive guidance on operating this toolkit safely, see [`trust/SECURITY.md`](trust/SECURITY.md) and the rest of [`trust/`](trust/).
 
-The main security and privacy risk is usually not the repo itself. It is how users operate external AI tools around the repo, including:
+## Scope
 
-- what information they paste into prompts
-- what files the assistant can access
-- what provider or tenant settings are enabled
-- whether generated outputs are reviewed before operational use
+This repository is markdown content: guidance, questionnaires, templates, and operating instructions. It ships no installer, executable, background service, or telemetry component. The only executable code is the maintenance workflow in [`.github/`](.github/).
 
-## Before Use
+Because of that, the security issues that matter here differ from a typical software project:
 
-Review:
+| In scope | Out of scope |
+|---|---|
+| Content that could mislead a user into unsafely disclosing personal or confidential data | Vulnerabilities in third-party AI tools used to operate this repo |
+| Prompt or instruction content that could cause an assistant to behave unsafely | Your organisation's own tenant, provider, or workspace configuration |
+| Leaked secrets, credentials, or personal data in the repository or its history | General AI model behaviour |
+| Broken or misleading trust, privacy, or safe-use guidance | Legal accuracy issues, which are content issues |
+| Supply-chain issues in the GitHub Actions workflows | |
+
+Legal or regulatory inaccuracy is a content issue, not a security issue. Report it using the outdated-legal-content issue template.
+
+## Reporting
+
+**For leaked secrets, credentials, or personal data:** do not open a public issue. Email **contact@rdnordic.com** with the detail.
+
+**For everything else in scope:** [open an issue](https://github.com/RDNordic/eu-ai-compliance-toolkit/issues) with enough detail to reproduce the concern.
+
+There is no bug bounty for this repository.
+
+## The Main Risk Is Not This Repository
+
+The repo is low-risk to clone and inspect. The real operational risk depends on what users paste into an AI tool, which provider they use, and what permissions that tool holds in their environment.
+
+Read these before sharing sensitive material with any AI tool:
 
 - [`trust/SECURITY.md`](trust/SECURITY.md)
 - [`trust/PRIVACY.md`](trust/PRIVACY.md)
 - [`trust/SAFE-USAGE.md`](trust/SAFE-USAGE.md)
 - [`trust/TRUST-BOUNDARIES.md`](trust/TRUST-BOUNDARIES.md)
 - [`trust/THREAT-MODEL.md`](trust/THREAT-MODEL.md)
-
-## Reporting Concerns
-
-If you identify a material issue in the repository content or its safe-use guidance, open an issue with enough detail to reproduce the concern.
