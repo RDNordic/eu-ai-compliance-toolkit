@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.5.0] - 2026-08-18
+
+Adds the Article 50 transparency deep-dive and refreshes framing now that Article 50 is in force.
+
+### Added
+- **`eu-ai-act/article-50-transparency.md`**: dedicated guide to the transparency obligations, now the live AI Act duty. Breaks the four obligations down by duty holder (50(1) and 50(2) are provider duties, 50(3) and 50(4) are deployer duties), covers each exception, the "obvious from context" trap, the one surviving grace period (50(2) marking to 2 December 2026 for pre-existing systems), penalties under Art. 99(4)(g) at up to EUR 15M or 3% of worldwide turnover, a per-system compliance checklist, and a scenario map. Ten-row claim-to-source register, all verified against the Official Journal text.
+
+### Changed
+- Article 50 framing refreshed across the repo now that the obligation has been in force since 2 August 2026: README banner, `omnibus-2026-changes.md` (including the "What To Do Now" call to action), `risk-classification.md`, and `application-dates.md` moved from "about to bind" / future tense to "in force". Any gap is now framed as current exposure, not a deadline to prepare for.
+- New guide cross-linked from README, `risk-classification.md` (limited-risk section), `application-dates.md`, and `omnibus-2026-changes.md`.
+- Two regulatory-watchlist rows (`risk-classification.md`, `dpia/ai-dpia-template.md`) whose review dates had passed were re-dated and pointed at the new guide.
+
+### Verification
+- Article 50 and Article 99 text checked against the Official Journal text of Regulation (EU) 2024/1689. Omnibus amendments (Art. 1(20) on Art. 50(7), Art. 1(39)(b) on Art. 111(4), Art. 1(38)(c) on the small mid-cap fine cap) checked against CELEX 32026R1744.
+
 ## [0.4.1] - 2026-07-31
 
 Clears the first staleness review (issue #1). The five flagged files predated the Digital Omnibus.

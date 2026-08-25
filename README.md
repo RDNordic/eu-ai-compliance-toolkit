@@ -1,6 +1,6 @@
 # EU AI Compliance Toolkit
 
-> **Last updated:** 2026-07-31
+> **Last updated:** 2026-08-18
 
 Turn Claude, Codex, and similar workspace assistants into structured EU AI Act and GDPR compliance operators for product teams.
 
@@ -8,9 +8,9 @@ Turn Claude, Codex, and similar workspace assistants into structured EU AI Act a
 >
 > **Regulation (EU) 2026/1744** amended the AI Act and entered into force on **27 July 2026**. High-risk obligations moved to **2 December 2027** (Annex III) and **2 August 2028** (Annex I).
 >
-> **Article 50 transparency obligations were not delayed and apply from 2 August 2026.** If your product talks to users or generates content, that is your live obligation this year, whatever the delay headlines said.
+> **Article 50 transparency obligations were not delayed and have been in force since 2 August 2026.** If your product talks to users or generates content, that is a live obligation now, not a future deadline, whatever the delay headlines said. See [`eu-ai-act/article-50-transparency.md`](eu-ai-act/article-50-transparency.md).
 >
-> Start with [`eu-ai-act/omnibus-2026-changes.md`](eu-ai-act/omnibus-2026-changes.md).
+> For the full picture of what changed, start with [`eu-ai-act/omnibus-2026-changes.md`](eu-ai-act/omnibus-2026-changes.md).
 
 ## Use This With A Chat Tool
 
@@ -148,7 +148,7 @@ The flows above are grounded in the existing legal core:
 
 | Folder | Contents |
 |--------|----------|
-| [`eu-ai-act/`](eu-ai-act/) | [Risk classification](eu-ai-act/risk-classification.md), [obligations by role](eu-ai-act/obligations-by-role.md), [application dates](eu-ai-act/application-dates.md), [2026 Omnibus changes](eu-ai-act/omnibus-2026-changes.md) |
+| [`eu-ai-act/`](eu-ai-act/) | [Risk classification](eu-ai-act/risk-classification.md), [obligations by role](eu-ai-act/obligations-by-role.md), [Article 50 transparency](eu-ai-act/article-50-transparency.md), [application dates](eu-ai-act/application-dates.md), [2026 Omnibus changes](eu-ai-act/omnibus-2026-changes.md) |
 | [`gdpr/`](gdpr/) | Lawful basis decision tree, recruitment guidance |
 | [`dpia/`](dpia/) | AI-specific DPIA template and checklist material |
 | [`resources/`](resources/) | Maintenance templates and official source support material |

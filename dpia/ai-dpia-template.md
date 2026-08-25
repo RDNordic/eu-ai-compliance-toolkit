@@ -1,6 +1,6 @@
 # Data Protection Impact Assessment (DPIA) Template for AI Systems
 
-> **Last updated:** 2026-07-31
+> **Last updated:** 2026-08-18
 >
 > This template addresses the requirements of **Article 35 GDPR** with additional considerations specific to AI and machine learning systems. It incorporates relevant obligations from the **EU AI Act** where applicable.
 >
@@ -344,7 +344,7 @@ Use this section to track known regulatory moving parts that may require updates
 | Art. 27 FRIA guidance and template | Commission or AI Office template for the fundamental rights impact assessment, and how it should dovetail with a GDPR DPIA | _unassigned_ | 2026-11-01 | `No change` | Overlap with this template is substantial; avoid duplicating work |
 | AI Act Art. 4a conditions | Supervisory authority expectations on evidencing the six conditions | _unassigned_ | 2026-11-01 | `No change` | New route as of 2026 |
 | EDPB DPIA criteria for AI | Revisions to the Art. 35(4) national lists or EDPB screening criteria as they apply to AI | _unassigned_ | 2026-12-01 | `No change` | National DPA lists vary |
-| Art. 50 transparency guidance | Commission guidance and codes of practice on marking and labelling ahead of 2026-08-02 | _unassigned_ | 2026-09-01 | `Update needed` | The live obligation this year |
+| Art. 50 transparency guidance | Commission guidance and codes of practice on marking and labelling under Art. 50(7) | _unassigned_ | 2026-09-15 | `Update needed` | Art. 50 in force since 2026-08-02; see [`../eu-ai-act/article-50-transparency.md`](../eu-ai-act/article-50-transparency.md) |
 | National DPA AI guidance | Datatilsynet, CNIL, BfDI, AEPD positions on AI DPIAs | _unassigned_ | 2026-12-01 | `No change` | |
 
 ---

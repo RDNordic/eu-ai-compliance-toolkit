@@ -1,6 +1,6 @@
 # EU AI Act Application Dates
 
-> **Last updated:** 2026-07-31
+> **Last updated:** 2026-08-18
 >
 > **Status: revised for Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026.**
 >
@@ -12,9 +12,9 @@
 
 The Digital Omnibus on AI **delayed the high-risk obligations but did not delay the transparency obligations**.
 
-If you take one thing from this page: the widely reported "AI Act delayed to 2027" headline is only half true. **Article 50 transparency duties still bind from 2 August 2026.** Teams that stand down entirely on the strength of the delay will miss an obligation that is already live.
+If you take one thing from this page: the widely reported "AI Act delayed to 2027" headline is only half true. **Article 50 transparency duties have applied since 2 August 2026.** Teams that stood down entirely on the strength of the delay have missed an obligation that is already in force.
 
-See [`omnibus-2026-changes.md`](omnibus-2026-changes.md) for the full change analysis.
+See [`omnibus-2026-changes.md`](omnibus-2026-changes.md) for the full change analysis, and [`article-50-transparency.md`](article-50-transparency.md) for the transparency duties in detail.
 
 ---
 
@@ -62,7 +62,7 @@ Two things are **not** in that list, and this is easy to miss:
 
 **If you are building an Annex III high-risk system**, you have gained roughly 16 months, but the requirements themselves did not soften. Risk management, data governance, technical documentation, logging, human oversight, and conformity assessment all still apply, just later. Treat the delay as schedule relief, not scope relief.
 
-**If you ship a chatbot, an assistant, a content generator, or anything users interact with**, your obligation is live on 2 August 2026 regardless of the delay. Check Art. 50 first.
+**If you ship a chatbot, an assistant, a content generator, or anything users interact with**, your obligation has been live since 2 August 2026 regardless of the delay. Check Art. 50 first: [`article-50-transparency.md`](article-50-transparency.md).
 
 **If you generate or manipulate synthetic content**, note the split: systems already on the market get until 2 December 2026 for machine-readable marking; systems placed on the market on or after 2 August 2026 do not.
 

@@ -1,6 +1,6 @@
 # What the 2026 Digital Omnibus Changed
 
-> **Last updated:** 2026-07-31
+> **Last updated:** 2026-08-18
 >
 > Covers Regulation (EU) 2026/1744 of 8 July 2026, amending Regulations (EU) 2024/1689 (AI Act), (EU) 2018/1139 (civil aviation) and (EU) 2023/1230 (machinery). Published in the Official Journal on 24 July 2026, in force 27 July 2026.
 >
@@ -10,7 +10,7 @@
 
 ## The One-Line Version
 
-**High-risk obligations moved to December 2027. Transparency obligations did not move and bind on 2 August 2026.**
+**High-risk obligations moved to December 2027. Transparency obligations did not move and have applied since 2 August 2026.**
 
 ---
 
@@ -18,9 +18,9 @@
 
 The reporting on this regulation has been dominated by the delay. The headline most teams have absorbed is some version of "the EU AI Act has been pushed back to 2027."
 
-That is true for high-risk systems. It is not true for the obligation that is about to bind.
+That is true for high-risk systems. It is not true for the obligation that is already in force.
 
-**Article 50 transparency duties apply from 2 August 2026 and were untouched by the Omnibus.** They apply across risk tiers. They catch a very large population of ordinary products:
+**Article 50 transparency duties have applied since 2 August 2026 and were untouched by the Omnibus.** They apply across risk tiers. They catch a very large population of ordinary products:
 
 - chatbots and conversational assistants must tell people they are talking to an AI system
 - emotion recognition and biometric categorisation systems must inform the people subject to them
@@ -143,7 +143,7 @@ Simplifications previously available to SMEs were extended to small mid-cap comp
 
 ## What To Do Now
 
-**Everyone, this week:** check Article 50 against every user-facing AI feature you ship. Disclosure of AI interaction, synthetic content marking, emotion recognition and biometric categorisation notices. This binds 2 August 2026.
+**Everyone, now:** check Article 50 against every user-facing AI feature you ship. Disclosure of AI interaction, synthetic content marking, emotion recognition and biometric categorisation notices. This has been in force since 2 August 2026, so any gap is now a live exposure, not a deadline to prepare for. See the dedicated guide: [`article-50-transparency.md`](article-50-transparency.md).
 
 **Annex III high-risk builders:** keep going. Re-baseline the programme to 2 December 2027, and spend the recovered time on data governance evidence and human oversight design, which are the two areas where retrofitted documentation reads worst under scrutiny.
 

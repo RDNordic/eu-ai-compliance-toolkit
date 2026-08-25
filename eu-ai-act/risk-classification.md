@@ -1,6 +1,6 @@
 # EU AI Act — Risk Classification Quick Reference
 
-> **Last updated:** 2026-07-31
+> **Last updated:** 2026-08-18
 >
 > **Status: revised for Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026.**
 >
@@ -148,7 +148,7 @@ See [`application-dates.md`](application-dates.md) for the full timeline and [`o
 
 ## 3. Limited Risk — Transparency Obligations (Article 50)
 
-AI systems that interact with people or generate content carry **transparency obligations**, regardless of their risk level.
+AI systems that interact with people or generate content carry **transparency obligations**, regardless of their risk level. For the detailed provider/deployer breakdown, exceptions, timing, and penalties, see the dedicated guide: [`article-50-transparency.md`](article-50-transparency.md).
 
 | System Type | Transparency Requirement |
 |-------------|--------------------------|
@@ -163,7 +163,7 @@ AI systems that interact with people or generate content carry **transparency ob
 - **2 August 2026:** Transparency obligations apply. **This date was not moved by the 2026 Omnibus.**
 - **2 December 2026:** Grace period ends for machine-readable marking of synthetic content under Art. 50(2), for systems **already placed on the market before 2 August 2026**. Systems placed on the market on or after 2 August 2026 comply from that date.
 
-> **This is the most commonly missed obligation right now.** Because the high-risk deadline moved to December 2027, a lot of teams have concluded the AI Act no longer affects them this year. Article 50 is unaffected by that delay and binds from 2 August 2026. If your product talks to users, generates content, or produces synthetic media, this is your live obligation.
+> **This is the most commonly missed obligation.** Because the high-risk deadline moved to December 2027, a lot of teams concluded the AI Act no longer affected them yet. Article 50 is unaffected by that delay and has applied since 2 August 2026. If your product talks to users, generates content, or produces synthetic media, this is a live obligation now, and any gap is current exposure rather than a deadline still ahead.
 
 ---
 
@@ -247,7 +247,7 @@ Use this section to track known regulatory moving parts that may require updates
 | Topic | What to Watch | Owner | Review Date | Status | Notes |
 |-------|---------------|-------|-------------|--------|-------|
 | Chapter III Section 5 scope | Whether Arts. 40-49 fall outside the Art. 113(3)(c) deferral and apply from 2026-08-02 | _unassigned_ | 2026-09-01 | `Update needed` | Interpretation point, not a sourcing gap. Affects conformity assessment and Art. 49 registration timing |
-| Art. 50 guidance and Code of Practice on marking | Commission guidance on transparency and machine-readable marking ahead of 2026-08-02 | _unassigned_ | 2026-08-15 | `Update needed` | The live obligation this year; guidance expected around the application date |
+| Art. 50 guidance and Code of Practice on marking | Commission guidance and codes of practice on transparency and machine-readable marking under Art. 50(7) | _unassigned_ | 2026-09-15 | `Update needed` | Art. 50 now in force since 2026-08-02; guidance still awaited. See [`article-50-transparency.md`](article-50-transparency.md) |
 | Art. 4a bias-detection conditions | Guidance on the six cumulative conditions and how deployers evidence "strictly necessary" | _unassigned_ | 2026-10-01 | `No change` | New Art. 4a replaced the deleted Art. 10(5); GDPR interaction point |
 | New Art. 5 prohibitions in practice | Enforcement approach to the Art. 5(1a) safeguards test for general-purpose generators | _unassigned_ | 2026-11-01 | `No change` | Wording verified against OJ text; transitional deadline 2026-12-02 |
 | Harmonised standards for high-risk systems | CEN-CENELEC deliverables; standards readiness was the stated reason for the delay | _unassigned_ | 2026-10-01 | `No change` | Drives whether 2027-12-02 holds |
