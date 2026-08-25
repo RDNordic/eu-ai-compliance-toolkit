@@ -2,6 +2,7 @@
 /AGENTS.md
 /CLAUDE.md
 /next-step.md
+/session-handoff.md
 
 # Environment/secrets
 .env
