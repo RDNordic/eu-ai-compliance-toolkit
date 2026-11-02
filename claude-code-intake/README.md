@@ -1,6 +1,6 @@
 # EU AI Compliance Toolkit — Claude Code Quickstart
 
-> **Last updated:** 2026-07-31
+> **Last updated:** 2026-11-02
 
 This folder contains everything you need to run the EU AI Compliance Toolkit as an agentic intake session using Claude Code CLI in VS Code.
 
@@ -20,11 +20,11 @@ This is what "hook up your own AI, stay compliant" means in practice.
 
 | File in this folder | Where it goes in your repo | What it does |
 |---------------------|---------------------------|--------------|
-| `source-update/CLAUDE.md` | `CLAUDE.md` (repo root) | Tells Claude Code how to behave, which modes to run, and what to produce |
-| `source-update/v0.yml` | `intake/questions/v0.yml` | The question set Claude works through during a session |
-| `source-update/triage-summary.md` | `evidence-packs/example-municipality/triage-summary.md` | A worked example showing the expected triage output format |
+| `claude-code-intake/CLAUDE.md` | `CLAUDE.md` (repo root) | Tells Claude Code how to behave, which modes to run, and what to produce |
+| `claude-code-intake/v0.yml` | `intake/questions/v0.yml` | The question set Claude works through during a session |
+| `claude-code-intake/triage-summary.md` | `evidence-packs/example-municipality/triage-summary.md` | A worked example showing the expected triage output format |
 
-> **Note on paths.** The files live flat in `source-update/` in this repository, but Claude Code expects them at the destination paths shown above. Copy and rename them as part of setup. The destination paths are what `CLAUDE.md` refers to internally.
+> **Note on paths.** The files live flat in `claude-code-intake/` in this repository, but Claude Code expects them at the destination paths shown above. Copy and rename them as part of setup. The destination paths are what `CLAUDE.md` refers to internally.
 
 ---
 
@@ -42,23 +42,23 @@ Requires Node 18 or later. Authenticate with your Anthropic account when prompte
 
 **2. Copy files into your repo**
 
-Copy each file from `source-update/` to the destination path shown in the table above. The resulting structure should look like this:
+Copy each file from `claude-code-intake/` to the destination path shown in the table above. The resulting structure should look like this:
 
 ```
 your-repo/
-├── CLAUDE.md                          <- from source-update/CLAUDE.md
+├── CLAUDE.md                          <- from claude-code-intake/CLAUDE.md
 ├── intake/
 │   └── questions/
-│       └── v0.yml                     <- from source-update/v0.yml
+│       └── v0.yml                     <- from claude-code-intake/v0.yml
 └── evidence-packs/
     └── example-municipality/
-        └── triage-summary.md          <- from source-update/triage-summary.md
+        └── triage-summary.md          <- from claude-code-intake/triage-summary.md
 ```
 
 From the root of a clone of this repository:
 
 ```bash
-mkdir -p intake/questions evidence-packs/example-municipality && cp source-update/v0.yml intake/questions/v0.yml && cp source-update/triage-summary.md evidence-packs/example-municipality/triage-summary.md && cp source-update/CLAUDE.md ./CLAUDE.md
+mkdir -p intake/questions evidence-packs/example-municipality && cp claude-code-intake/v0.yml intake/questions/v0.yml && cp claude-code-intake/triage-summary.md evidence-packs/example-municipality/triage-summary.md && cp claude-code-intake/CLAUDE.md ./CLAUDE.md
 ```
 
 **3. Open your repo in VS Code and start Claude Code**

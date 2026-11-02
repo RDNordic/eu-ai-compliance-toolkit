@@ -1,6 +1,6 @@
 # EU AI Act — Risk Classification Quick Reference
 
-> **Last updated:** 2026-08-18
+> **Last updated:** 2026-11-02
 >
 > **Status: revised for Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026.**
 >
@@ -251,7 +251,7 @@ Use this section to track known regulatory moving parts that may require updates
 | Art. 4a bias-detection conditions | Guidance on the six cumulative conditions and how deployers evidence "strictly necessary" | _unassigned_ | 2026-10-01 | `No change` | New Art. 4a replaced the deleted Art. 10(5); GDPR interaction point |
 | New Art. 5 prohibitions in practice | Enforcement approach to the Art. 5(1a) safeguards test for general-purpose generators | _unassigned_ | 2026-11-01 | `No change` | Wording verified against OJ text; transitional deadline 2026-12-02 |
 | Harmonised standards for high-risk systems | CEN-CENELEC deliverables; standards readiness was the stated reason for the delay | _unassigned_ | 2026-10-01 | `No change` | Drives whether 2027-12-02 holds |
-| National competent authority designations | Member State designations and any national AI Act implementing law, incl. EEA status for Norway | _unassigned_ | 2026-10-01 | `No change` | Relevant to the EEA scope note in README |
+| National competent authority designations | Member State designations and any national AI Act implementing law, incl. EEA status for Norway | _unassigned_ | 2027-01-15 | `Update needed` | Reviewed 2026-11-02. Not yet in the EEA Agreement (RC-16). Norway: KI-loven re-consultation announced for autumn 2026, bill aimed at spring 2027; consultation on the omnibus open to 2026-12-11 (RC-17). Member State designations not yet reviewed. README EEA scope note updated |
 
 ---
 
@@ -276,8 +276,10 @@ Use this section to map key claims in this document to primary legal or regulato
 | RC-13 | Art. 49 registration was not amended; burden reduced via Annex VIII | `Regulation` | 2026/1744 Art. 1(42), deleting Annex VIII Section B points 7 and 9 | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Art. 49 itself is untouched |
 | RC-14 | AI regulatory sandboxes operational by 2027-08-02 | `Regulation` | 2026/1744 Art. 1(22), replacing 2024/1689 Art. 57(1) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-07-31 | Verified. Was 2026-08-02 |
 | RC-15 | Annex X large-scale IT systems deadline unchanged at 2030-12-31 | `Regulation` | 2024/1689 Art. 111(1) | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-07-31 | Verified. Art. 111(1) was **not** amended; the 2027-08-02 reference date stands |
+| RC-16 | AI Act not yet incorporated into the EEA Agreement | `Authority statement` | EFTA EEA-Lex entry for 32024R1689: "under scrutiny for incorporation" by Iceland, Liechtenstein and Norway; no Joint Committee decision | https://www.efta.int/eea-lex/32024R1689 | 2026-11-02 | Re-check on each review; incorporation changes the README EEA note |
+| RC-17 | Norway aims to present its national AI law to the Storting in spring 2027, after a new consultation | `Authority statement` | Ministry of Digitalisation and Public Governance press release, 2026-08-04; omnibus consultation published 2026-10-30, deadline 2026-12-11 | https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/ | 2026-11-02 | Stated as an ambition, not a fixed date. Omnibus consultation: https://www.regjeringen.no/no/dokumenter/horing-eus-ki-omnibus/id3181463/ |
 
-> **Verification status: primary-source verified.** All rows above were checked against the Official Journal texts of Regulation (EU) 2024/1689 and Regulation (EU) 2026/1744 (CELEX 32026R1744) on 2026-07-31.
+> **Verification status: primary-source verified.** Rows RC-01 to RC-15 were checked against the Official Journal texts of Regulation (EU) 2024/1689 and Regulation (EU) 2026/1744 (CELEX 32026R1744) on 2026-07-31. RC-16 and RC-17 were checked against EFTA EEA-Lex and regjeringen.no on 2026-11-02.
 >
 > The one item that remains genuinely open is an interpretation question rather than a sourcing gap: whether Chapter III Section 5 (Arts. 40-49) falls outside the deferral and therefore applies from 2026-08-02. See [`application-dates.md`](application-dates.md).
 

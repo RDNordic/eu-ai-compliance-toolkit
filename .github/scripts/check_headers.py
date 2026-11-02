@@ -22,7 +22,7 @@ import sys
 # Files legitimately without a Last updated header.
 EXEMPT = {
     "CHANGELOG.md",              # every entry is individually dated
-    "source-update/triage-summary.md",  # dated artefact, carries `generated:` in front matter
+    "claude-code-intake/triage-summary.md",  # dated artefact, carries `generated:` in front matter
     ".github/PULL_REQUEST_TEMPLATE.md",
 }
 

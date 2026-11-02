@@ -1,6 +1,6 @@
 # EU AI Compliance Toolkit
 
-> **Last updated:** 2026-08-18
+> **Last updated:** 2026-11-02
 
 Turn Claude, Codex, and similar workspace assistants into structured EU AI Act and GDPR compliance operators for product teams.
 
@@ -12,7 +12,19 @@ Turn Claude, Codex, and similar workspace assistants into structured EU AI Act a
 >
 > For the full picture of what changed, start with [`eu-ai-act/omnibus-2026-changes.md`](eu-ai-act/omnibus-2026-changes.md).
 
-## Use This With A Chat Tool
+## Choose Your Path
+
+| You want to... | Start here |
+|----------------|------------|
+| Run an assessment in a chat tool (ChatGPT, Claude, Gemini, Copilot) | Paste the [prompt below](#chat-tool-prompt) |
+| Run a guided intake in Claude Code that writes an evidence pack to your repo | [`claude-code-intake/`](claude-code-intake/README.md) |
+| Work in this repo with Claude Code, Codex, or Cursor | [`START-HERE.md`](START-HERE.md), plus the playbook for [Claude Code](playbooks/claude-code.md), [Codex](playbooks/codex.md), or [Cursor](playbooks/cursor.md) |
+| Read the legal reference directly | [Knowledge Base](#knowledge-base) |
+| Copy controls into your own product repo | [`starter-pack/`](starter-pack/) |
+
+More copy-paste prompts for specific cases (recruitment, public-sector chatbot, vendor review) are in [`LAUNCH-PROMPTS.md`](LAUNCH-PROMPTS.md).
+
+### Chat-Tool Prompt
 
 If you are pasting this GitHub repo into ChatGPT, Claude, Gemini, Copilot, or another web assistant, use this prompt:
 
@@ -64,31 +76,7 @@ The intended interaction model is progressive:
 - collect only the missing facts that matter
 - escalate to a fuller questionnaire when risk, uncertainty, or governance needs justify it
 
-## Start Here
-
-If you are using this repo with Claude, Codex, Cursor, or similar tools:
-
-1. Open [`START-HERE.md`](START-HERE.md)
-2. Tell your assistant what you want to do in a short fact pattern
-3. Let it route you to the relevant workflow
-4. Answer only the minimum follow-up questions needed
-5. Use a full questionnaire only if the issue is material, ambiguous, or heading toward a decision record
-6. Review the output and any legal escalation points
-
-Suggested starting format:
-
-- what the product or use case does
-- who the users are
-- what AI does in the workflow
-- what data is involved
-- what outcome or decision you need help with
-
-Supporting files:
-
-- [`RUNBOOK.md`](RUNBOOK.md)
-- [`playbooks/claude-code.md`](playbooks/claude-code.md)
-- [`playbooks/codex.md`](playbooks/codex.md)
-- [`playbooks/cursor.md`](playbooks/cursor.md)
+Whichever path you take, open with a short fact pattern: what the product does, who uses it, what the AI does in the workflow, what data is involved, and what decision you need help with. The assistant asks only for the missing facts that matter.
 
 ## Core Workflows
 
@@ -117,12 +105,7 @@ Supporting files:
 - [`examples/recruitment-ai-case.md`](examples/recruitment-ai-case.md)
 - [`examples/public-sector-chatbot-case.md`](examples/public-sector-chatbot-case.md)
 - sample outputs in [`examples/output-samples/`](examples/output-samples/)
-
-## Launch Prompts
-
-For copy-paste prompts that help new users start quickly, see:
-
-- [`LAUNCH-PROMPTS.md`](LAUNCH-PROMPTS.md)
+- a Norwegian municipality triage output in [`claude-code-intake/triage-summary.md`](claude-code-intake/triage-summary.md)
 
 ## Practical Assets
 
@@ -170,7 +153,7 @@ This repo is written primarily for:
 - EU AI Act: Regulation (EU) 2024/1689
 
 It is most directly relevant to EU and EEA contexts, and may also matter for non-EU organisations with extraterritorial exposure.
-For EEA countries such as Norway, local applicability of the EU AI Act may depend on separate incorporation and timing, so users should confirm current national status where that matters.
+GDPR applies across the EEA. The AI Act does not yet: as of 2 November 2026 it has **not been incorporated into the EEA Agreement** ([EEA-Lex](https://www.efta.int/eea-lex/32024R1689) lists it as under scrutiny by Iceland, Liechtenstein and Norway). Norway's government aims to put a national AI law before the Storting in spring 2027 ([regjeringen.no, 4 Aug 2026](https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/)). EEA organisations whose AI output is used in the EU can already be in scope under Art. 2(1)(c). Check the current national status before relying on this.
 
 ## Business Use
 

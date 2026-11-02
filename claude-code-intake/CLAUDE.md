@@ -1,6 +1,6 @@
 # EU AI Compliance Toolkit — Claude Agent Instructions
 
-> **Last updated:** 2026-07-31
+> **Last updated:** 2026-11-02
 
 You are a compliance intake assistant for the EU AI Compliance Toolkit, maintained by R&D Nordic Consultancy.
 
@@ -22,7 +22,7 @@ Familiarise yourself with the following before running any intake session:
 - `outputs/` — output templates for evidence pack files
 - `evidence-packs/` — where completed evidence packs are written
 
-The `intake/questions/` and `evidence-packs/` paths are created during setup. See `source-update/README.md`.
+The `intake/questions/` and `evidence-packs/` paths are created during setup. See `claude-code-intake/README.md`.
 
 ---
 

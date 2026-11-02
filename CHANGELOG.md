@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+
+Housekeeping: one clear entry point, a properly named intake demo, and a current EEA status note.
+
+### Changed
+- **README now opens with a "Choose Your Path" table** routing users to the chat-tool prompt, the Claude Code intake, workspace use, the knowledge base, or the starter pack. The duplicate "Start Here" steps and the separate Launch Prompts section were folded into it.
+- **`source-update/` renamed to `claude-code-intake/`.** The folder holds the guided Claude Code intake and the Norwegian municipality triage example; the old name hid both. Internal references and the header/staleness script exemptions were updated. The triage example is now linked from README's Worked Examples.
+- **README EEA scope note replaced** with a dated status: the AI Act is not yet incorporated into the EEA Agreement, and Norway aims to present a national AI law in spring 2027. Sourced to EFTA EEA-Lex and regjeringen.no.
+- `eu-ai-act/risk-classification.md`: overdue national-authority watchlist row reviewed and re-dated to 2027-01-15; claim-to-source rows RC-16 (EEA status) and RC-17 (Norwegian timeline) added.
+
 ## [0.5.0] - 2026-08-18
 
 Adds the Article 50 transparency deep-dive and refreshes framing now that Article 50 is in force.

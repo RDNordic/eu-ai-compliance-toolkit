@@ -27,7 +27,7 @@ GENERAL_DAYS = 270
 
 EXEMPT = {
     "CHANGELOG.md",
-    "source-update/triage-summary.md",
+    "claude-code-intake/triage-summary.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
 }
 
