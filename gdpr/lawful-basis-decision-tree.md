@@ -1,6 +1,6 @@
 # GDPR Lawful Basis Decision Tree for AI/ML Processing
 
-> **Last updated:** 2026-07-31
+> **Last updated:** 2026-11-02
 >
 > This document provides a practical decision tree for selecting a lawful basis under the GDPR (Regulation (EU) 2016/679) when processing personal data for AI and machine learning purposes. Always refer to the [official GDPR text](https://eur-lex.europa.eu/eli/reg/2016/679/oj) and relevant supervisory authority guidance.
 >
@@ -392,9 +392,9 @@ Use this section to track known regulatory moving parts that may require updates
 
 | Topic | What to Watch | Owner | Review Date | Status | Notes |
 |-------|---------------|-------|-------------|--------|-------|
-| AI Act Art. 4a guidance | How supervisory authorities expect the six conditions, especially "no other data" and the deletion trigger, to be evidenced | _unassigned_ | 2026-11-01 | `No change` | New route; no authority guidance yet at time of writing |
-| EDPB opinion on AI models and GDPR | Follow-up guidance or revision to the December 2024 opinion on legitimate interests for AI development and deployment | _unassigned_ | 2026-10-01 | `No change` | Directly affects Step 6 and the training-data scenarios |
-| Art. 22 and AI Act interaction | Guidance or case law on when AI-assisted decisions become "solely automated" in practice | _unassigned_ | 2026-11-01 | `No change` | The weakest point in most recruitment and scoring assessments |
+| AI Act Art. 4a guidance | How supervisory authorities expect the six conditions, especially "no other data" and the deletion trigger, to be evidenced | _unassigned_ | 2027-02-01 | `No change` | Reviewed 2026-11-02: still no authority guidance found |
+| EDPB opinion on AI models and GDPR | Follow-up guidance or revision to the December 2024 opinion on legitimate interests for AI development and deployment | _unassigned_ | 2027-02-01 | `No change` | Reviewed 2026-11-02: no follow-up or revision found; Opinion 28/2024 still the reference. Directly affects Step 6 and the training-data scenarios |
+| Art. 22 and AI Act interaction | Guidance or case law on when AI-assisted decisions become "solely automated" in practice | _unassigned_ | 2027-02-01 | `No change` | Reviewed 2026-11-02: no new EDPB guidance found. The weakest point in most recruitment and scoring assessments |
 | National employment law variation | Member State rules on workplace AI, works council consultation, and Art. 88 GDPR provisions | _unassigned_ | 2026-12-01 | `No change` | Consent is rarely valid in employment; national law usually decides |
 | CJEU case law on legitimate interests | Decisions affecting the balancing test for AI training and profiling | _unassigned_ | 2026-12-01 | `No change` | |
 

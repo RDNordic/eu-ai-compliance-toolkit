@@ -1,6 +1,6 @@
 # Article 50 Transparency Obligations
 
-> **Last updated:** 2026-08-18
+> **Last updated:** 2026-11-02
 >
 > Covers Article 50 of Regulation (EU) 2024/1689 (EU AI Act), as amended by Regulation (EU) 2026/1744 (Digital Omnibus on AI).
 
@@ -12,7 +12,7 @@
 
 If your organisation stood down on the strength of "the AI Act was delayed", this is the obligation you are now behind on. It is live, it applies across every risk tier, and it reaches a large population of ordinary products that are nowhere near high-risk.
 
-> One grace period survives: machine-readable **marking** of synthetic content (paragraph 2) has until **2 December 2026** for systems already on the market before 2 August 2026. Everything else applies now. See [Timing](#timing-and-the-one-grace-period) below.
+> One grace period survives: machine-readable **marking** of synthetic content (paragraph 2) applies from **2 December 2026** for systems already on the market before 2 August 2026. Everything else has applied since 2 August 2026. See [Timing](#timing-and-the-one-grace-period) below.
 
 ---
 
@@ -149,7 +149,7 @@ Work through this per system, recording evidence as you go.
 
 - [ ] **Does this system interact directly with people?** If yes, is AI interaction disclosed clearly, at or before first interaction, accessibly? (50(1))
 - [ ] **Does it generate synthetic audio, image, video, or text?** If yes, is the output machine-readable-marked and detectable as AI-generated? Is your solution defensible against "technically feasible" and "state of the art"? (50(2))
-- [ ] **Was this system on the market before 2 August 2026?** If yes, the marking duty has until 2 December 2026; if no, it applies now. (Art. 111(4))
+- [ ] **Was this system on the market before 2 August 2026?** If yes, the marking duty applies from 2 December 2026; if no, it has applied since 2 August 2026. (Art. 111(4))
 - [ ] **Does it do emotion recognition or biometric categorisation?** First confirm it is not prohibited under Art. 5 (workplace, education). If permitted, are exposed people informed, and is the GDPR basis documented? (50(3))
 - [ ] **Does it produce deep fakes or public-interest text?** Is generation disclosed? For text, is there human editorial review with a named responsible person? (50(4))
 - [ ] **Is disclosure clear and distinguishable, at latest at first interaction or exposure, and accessible?** (50(5))
@@ -195,6 +195,8 @@ Work through this per system, recording evidence as you go.
 | A50-08 | Marking grace period to 2 December 2026 for pre-existing systems | `Regulation` | 2026/1744 Art. 1(39)(b) inserting 2024/1689 Art. 111(4) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-08-18 | Verified against OJ text |
 | A50-09 | Art. 50 breaches fined up to EUR 15M or 3% of worldwide turnover | `Regulation` | 2024/1689 Art. 99(4)(g) | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | 2026-08-18 | Verified against OJ text |
 | A50-10 | SME/start-up lower-of cap, extended to small mid-caps by the Omnibus | `Regulation` | 2024/1689 Art. 99(6); 2026/1744 Art. 1(38)(c) | https://eur-lex.europa.eu/eli/reg/2026/1744/oj | 2026-08-18 | Verified against OJ text |
+| A50-11 | Final Code of Practice on marking and labelling AI-generated content published 2026-06-10; adherence is voluntary, but signatories can use it to demonstrate compliance | `Guideline` | European Commission, Code of Practice on Transparency of AI-generated Content | https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content | 2026-11-02 | Section 1 covers providers (marking, detection); Section 2 covers deployers (deepfake and text labelling) |
+| A50-12 | Commission guidelines on Art. 50 transparency obligations are available | `Guideline` | European Commission, Guidelines on transparency obligations for providers and deployers of certain AI systems | https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content | 2026-11-02 | Non-binding interpretation. Adoption date not confirmed from the Commission page (page last updated 2026-08-06) |
 
 ---
 
@@ -204,7 +206,9 @@ Work through this per system, recording evidence as you go.
 >
 > Retrieval note: EUR-Lex web pages return HTTP 202 with an empty body to automated clients. Use the Publications Office CELLAR endpoint: `curl -H "Accept: application/xhtml+xml" http://publications.europa.eu/resource/celex/32026R1744`.
 >
-> Open item to watch: Commission guidance and codes of practice on marking and labelling under Art. 50(7). Tracked in the regulatory watchlist in [`risk-classification.md`](risk-classification.md).
+> **Guidance now available (checked 2026-11-02).** The Commission published the final [Code of Practice on marking and labelling AI-generated content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content) on 10 June 2026. It is voluntary, but the Article 50 duties it helps meet are not: signatories can use the Code to demonstrate compliance, and everyone else must show their own measures are adequate. The Commission has also issued [guidelines on the Article 50 transparency obligations](https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content). Both are non-binding, so this guide still cites the Regulation as the authority (A50-11, A50-12).
+>
+> Open item to watch: any implementing act under the amended Art. 50(7). Tracked in the regulatory watchlist in [`risk-classification.md`](risk-classification.md).
 
 ---
 

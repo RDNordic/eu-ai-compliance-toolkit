@@ -1,6 +1,6 @@
 # Contributing
 
-> **Last updated:** 2026-07-31
+> **Last updated:** 2026-11-02
 
 Thank you for your interest in contributing to the EU AI Compliance Toolkit.
 
@@ -75,6 +75,6 @@ If you prefer not to open a pull request, you can also email feedback or suggest
 
 By contributing, you agree that:
 
-- Your contributions will be licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Your contributions will be licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), except contributions to `starter-pack/` and `outputs/`, which are dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
 - Your submissions are your own original work, or you have the right to submit them under this licence.
 - You have not knowingly included any material that infringes on another party's intellectual property rights.

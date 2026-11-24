@@ -155,15 +155,11 @@ This repo is written primarily for:
 It is most directly relevant to EU and EEA contexts, and may also matter for non-EU organisations with extraterritorial exposure.
 GDPR applies across the EEA. The AI Act does not yet: as of 2 November 2026 it has **not been incorporated into the EEA Agreement** ([EEA-Lex](https://www.efta.int/eea-lex/32024R1689) lists it as under scrutiny by Iceland, Liechtenstein and Norway). Norway's government aims to put a national AI law before the Storting in spring 2027 ([regjeringen.no, 4 Aug 2026](https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/)). EEA organisations whose AI output is used in the EU can already be in scope under Art. 2(1)(c). Check the current national status before relying on this.
 
-## Business Use
+## About This Project
 
-This open repo is intended to be usable on its own, but it also supports tailored implementation work such as:
+This toolkit is a voluntary, non-commercial contribution to responsible AI adoption, written for the many teams, especially in the public sector, that need practical guidance and can't get it fast enough.
 
-- organisation-specific questionnaires
-- internal governance workflow design
-- evidence register setup
-- sector-specific compliance packs
-- ongoing regulatory update and review support
+**The maintainer is not a lawyer.** The content is a best-effort reading of the law. It has been checked against primary sources where possible, but **its accuracy cannot be guaranteed**. Every legal claim links to its source so you can verify it yourself. If you find an error, please [open an issue](https://github.com/RDNordic/eu-ai-compliance-toolkit/issues). Corrections are the most valuable contribution you can make.
 
 ## Important Limits
 
@@ -184,8 +180,10 @@ If you notice an error, outdated source, or major gap, open an issue:
 
 ## Licence
 
-This work is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+The guidance in this repository is licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
+
+The copy-ready templates in [`starter-pack/`](starter-pack/LICENCE.md) and [`outputs/`](outputs/LICENCE.md) are dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/), so you can paste them into your own systems without attribution or share-alike conditions.
 
 ## Disclaimer
 
-This toolkit is provided for informational purposes only and does not constitute legal, regulatory, or professional advice. Organisations should seek qualified legal counsel for decisions specific to their circumstances.
+This toolkit is provided for informational purposes only and does not constitute legal, regulatory, or professional advice. It is maintained by a non-lawyer, is provided as is without any warranty of accuracy or completeness, and may contain errors or be out of date. Organisations should seek qualified legal counsel for decisions specific to their circumstances.

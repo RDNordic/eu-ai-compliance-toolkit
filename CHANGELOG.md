@@ -4,9 +4,18 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-Housekeeping: one clear entry point, a properly named intake demo, and a current EEA status note.
+Housekeeping: one clear entry point, a properly named intake demo, a current EEA status note, a clear statement of what this project is, and a full watchlist review.
+
+### Added
+- **"About This Project" section in README**, plus a stronger disclaimer: the toolkit is a voluntary, non-commercial contribution maintained by a non-lawyer, and its accuracy cannot be guaranteed. It replaces the former "Business Use" section.
+- **CC0 1.0 public-domain dedication for `starter-pack/` and `outputs/`** (`LICENCE.md` in each), so templates can be copied into internal systems without attribution or share-alike conditions. The guidance stays CC BY-SA 4.0. README and CONTRIBUTING updated.
+- Claim-to-source rows: RC-18 (EN 18286:2026, the first harmonised standard cited in the OJ, via Implementing Decision (EU) 2026/2274), A50-11 and A50-12 (final Art. 50 Code of Practice and Commission guidelines), DP-10 (Art. 27(4) and (5) as amended: a FRIA may cross-reference the DPIA).
 
 ### Changed
+- **Full watchlist review (2026-11-02)** of every row past its review date in `risk-classification.md`, `dpia/ai-dpia-template.md`, and `gdpr/lawful-basis-decision-tree.md`. Each row records what was found and has a new review date. The Chapter III Section 5 question remains open.
+- `article-50-transparency.md`: the "guidance awaited" note replaced with the final Code of Practice (10 June 2026) and the Commission guidelines, both marked non-binding.
+- `dpia/ai-dpia-template.md`: the FRIA checklist row now notes that a FRIA may reuse this DPIA under the amended Art. 27(4).
+- Phrasing around the 2 December 2026 dates (the new Art. 5 prohibitions; Art. 50(2) marking for pre-existing systems) changed from "has until" to "applies from", so it stays accurate after that date.
 - **README now opens with a "Choose Your Path" table** routing users to the chat-tool prompt, the Claude Code intake, workspace use, the knowledge base, or the starter pack. The duplicate "Start Here" steps and the separate Launch Prompts section were folded into it.
 - **`source-update/` renamed to `claude-code-intake/`.** The folder holds the guided Claude Code intake and the Norwegian municipality triage example; the old name hid both. Internal references and the header/staleness script exemptions were updated. The triage example is now linked from README's Worked Examples.
 - **README EEA scope note replaced** with a dated status: the AI Act is not yet incorporated into the EEA Agreement, and Norway aims to present a national AI law in spring 2027. Sourced to EFTA EEA-Lex and regjeringen.no.

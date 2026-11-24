@@ -1,6 +1,6 @@
 # What the 2026 Digital Omnibus Changed
 
-> **Last updated:** 2026-08-18
+> **Last updated:** 2026-11-02
 >
 > Covers Regulation (EU) 2026/1744 of 8 July 2026, amending Regulations (EU) 2024/1689 (AI Act), (EU) 2018/1139 (civil aviation) and (EU) 2023/1230 (machinery). Published in the Official Journal on 24 July 2026, in force 27 July 2026.
 >
@@ -149,7 +149,7 @@ Simplifications previously available to SMEs were extended to small mid-cap comp
 
 **Embedded / Annex I builders:** re-run classification against the narrowed safety-component test before assuming 2 August 2028 applies to you. You may be out of scope.
 
-**Generative image and video providers:** assess against the new Article 5 prohibitions and document your safeguards ahead of 2 December 2026.
+**Generative image and video providers:** assess against the new Article 5 prohibitions and document your safeguards; the new prohibitions apply from 2 December 2026.
 
 **Anyone who published an AI Act readiness plan before July 2026:** it now contains wrong dates. Reissue it.
 

@@ -1,6 +1,6 @@
 # EU AI Act Application Dates
 
-> **Last updated:** 2026-08-18
+> **Last updated:** 2026-11-02
 >
 > **Status: revised for Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026.**
 >
@@ -64,7 +64,7 @@ Two things are **not** in that list, and this is easy to miss:
 
 **If you ship a chatbot, an assistant, a content generator, or anything users interact with**, your obligation has been live since 2 August 2026 regardless of the delay. Check Art. 50 first: [`article-50-transparency.md`](article-50-transparency.md).
 
-**If you generate or manipulate synthetic content**, note the split: systems already on the market get until 2 December 2026 for machine-readable marking; systems placed on the market on or after 2 August 2026 do not.
+**If you generate or manipulate synthetic content**, note the split: systems already on the market must apply machine-readable marking from 2 December 2026; systems placed on the market on or after 2 August 2026 have had to since that date.
 
 **If you are relying on the Art. 6(1) safety-component route**, re-run your classification. The Omnibus narrowed the definition. See [`omnibus-2026-changes.md`](omnibus-2026-changes.md).
 
