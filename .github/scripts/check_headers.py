@@ -9,6 +9,8 @@ Format expected within the first 8 lines:
 
     > **Last updated:** YYYY-MM-DD
 
+Norwegian-language documents under `norge/` may use `> **Sist oppdatert:** YYYY-MM-DD`.
+
 Exit code 0 if every file conforms, 1 otherwise.
 """
 
@@ -26,8 +28,8 @@ EXEMPT = {
     ".github/PULL_REQUEST_TEMPLATE.md",
 }
 
-HEADER = re.compile(r"Last updated:?\*{0,2}\s*(\d{4}-\d{2}-\d{2})", re.IGNORECASE)
-LOOSE = re.compile(r"Last updated", re.IGNORECASE)
+HEADER = re.compile(r"(?:Last updated|Sist oppdatert):?\*{0,2}\s*(\d{4}-\d{2}-\d{2})", re.IGNORECASE)
+LOOSE = re.compile(r"Last updated|Sist oppdatert", re.IGNORECASE)
 
 
 def tracked_markdown():

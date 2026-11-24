@@ -4,7 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-Housekeeping: one clear entry point, a properly named intake demo, a current EEA status note, a clear statement of what this project is, and a full watchlist review.
+### Added: Norwegian public-sector pack (started)
+- **`norge/README.md`** (in Norwegian Bokmål): status of the AI Act in Norway as of 2026-11-24, written for public bodies that use AI. Covers EEA status, the KI-loven timeline, the open omnibus consultation (deadline 2026-12-11), supervision, and the new Public Administration Act (adopted but not in force; §§ 11 and 12 on automated decisions). Separates what applies now (GDPR) from what is coming, lists small first steps, and includes a watchlist and an eight-row source register (NO-01 to NO-08).
+- The README path table and EEA note link to the new page.
+- CI: the header and staleness checks accept `Sist oppdatert` for Norwegian documents, and `norge/` is in the 120-day legal tier.
+
+Earlier in this release, housekeeping: one clear entry point, a properly named intake demo, a current EEA status note, a clear statement of what this project is, and a full watchlist review.
 
 ### Added
 - **"About This Project" section in README**, plus a stronger disclaimer: the toolkit is a voluntary, non-commercial contribution maintained by a non-lawyer, and its accuracy cannot be guaranteed. It replaces the former "Business Use" section.

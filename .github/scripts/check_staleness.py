@@ -21,7 +21,7 @@ import re
 import subprocess
 import sys
 
-LEGAL_PREFIXES = ("eu-ai-act/", "gdpr/", "dpia/", "resources/")
+LEGAL_PREFIXES = ("eu-ai-act/", "gdpr/", "dpia/", "resources/", "norge/")
 LEGAL_DAYS = 120
 GENERAL_DAYS = 270
 
@@ -31,7 +31,7 @@ EXEMPT = {
     ".github/PULL_REQUEST_TEMPLATE.md",
 }
 
-HEADER = re.compile(r"Last updated:?\*{0,2}\s*(\d{4}-\d{2}-\d{2})", re.IGNORECASE)
+HEADER = re.compile(r"(?:Last updated|Sist oppdatert):?\*{0,2}\s*(\d{4}-\d{2}-\d{2})", re.IGNORECASE)
 
 
 def tracked_markdown():

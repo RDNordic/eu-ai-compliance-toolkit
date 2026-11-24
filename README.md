@@ -1,6 +1,6 @@
 # EU AI Compliance Toolkit
 
-> **Last updated:** 2026-11-02
+> **Last updated:** 2026-11-24
 
 Turn Claude, Codex, and similar workspace assistants into structured EU AI Act and GDPR compliance operators for product teams.
 
@@ -21,6 +21,7 @@ Turn Claude, Codex, and similar workspace assistants into structured EU AI Act a
 | Work in this repo with Claude Code, Codex, or Cursor | [`START-HERE.md`](START-HERE.md), plus the playbook for [Claude Code](playbooks/claude-code.md), [Codex](playbooks/codex.md), or [Cursor](playbooks/cursor.md) |
 | Read the legal reference directly | [Knowledge Base](#knowledge-base) |
 | Copy controls into your own product repo | [`starter-pack/`](starter-pack/) |
+| Work in the Norwegian public sector (på norsk) | [`norge/`](norge/README.md): status of the AI Act in Norway and what applies now |
 
 More copy-paste prompts for specific cases (recruitment, public-sector chatbot, vendor review) are in [`LAUNCH-PROMPTS.md`](LAUNCH-PROMPTS.md).
 
@@ -153,7 +154,7 @@ This repo is written primarily for:
 - EU AI Act: Regulation (EU) 2024/1689
 
 It is most directly relevant to EU and EEA contexts, and may also matter for non-EU organisations with extraterritorial exposure.
-GDPR applies across the EEA. The AI Act does not yet: as of 2 November 2026 it has **not been incorporated into the EEA Agreement** ([EEA-Lex](https://www.efta.int/eea-lex/32024R1689) lists it as under scrutiny by Iceland, Liechtenstein and Norway). Norway's government aims to put a national AI law before the Storting in spring 2027 ([regjeringen.no, 4 Aug 2026](https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/)). EEA organisations whose AI output is used in the EU can already be in scope under Art. 2(1)(c). Check the current national status before relying on this.
+GDPR applies across the EEA. The AI Act does not yet: as of 2 November 2026 it has **not been incorporated into the EEA Agreement** ([EEA-Lex](https://www.efta.int/eea-lex/32024R1689) lists it as under scrutiny by Iceland, Liechtenstein and Norway). Norway's government aims to put a national AI law before the Storting in spring 2027 ([regjeringen.no, 4 Aug 2026](https://www.regjeringen.no/no/aktuelt/tung-vil-sende-ki-loven-med-endringer-pa-horing/id3169693/)). EEA organisations whose AI output is used in the EU can already be in scope under Art. 2(1)(c). Check the current national status before relying on this. For Norway, the maintained status page is [`norge/README.md`](norge/README.md) (in Norwegian).
 
 ## About This Project
 
